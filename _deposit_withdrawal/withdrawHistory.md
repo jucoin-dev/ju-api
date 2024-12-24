@@ -2,7 +2,7 @@
 title: Withdrawal history
 position_number: 5
 type: get
-description: /v4/withdraw/history
+description: /v1/spot/withdraw/history
 parameters:
     -
         name: 'currency'

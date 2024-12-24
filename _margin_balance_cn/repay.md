@@ -3,7 +3,7 @@ title: 获取杠杆还款列表
 position_number: 3
 type: get
 split: -------------------------------------
-description: /v4/lever/repay
+description: /v1/spot/lever/repay
 parameters:
   -
     name: symbol

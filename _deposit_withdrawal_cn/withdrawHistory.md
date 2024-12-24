@@ -2,7 +2,7 @@
 title: 提现历史
 position_number: 5
 type: get
-description: /v4/withdraw/history
+description: /v1/spot/withdraw/history
 parameters:
     -
         name: 'currency'

@@ -2,7 +2,7 @@
 title: 提现
 position_number: 4
 type: post
-description: /v4/withdraw
+description: /v1/spot/withdraw
 parameters:
     -
         name: 'currency'

@@ -3,7 +3,7 @@ title: 获取杠杆单个资产
 position_number: 1
 type: get
 split: -------------------------------------
-description: /v4/lever/balance
+description: /v1/spot/lever/balance
 parameters:
   -
     name: symbol

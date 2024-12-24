@@ -2,7 +2,7 @@
 title: Get the deposit address
 position_number: 2
 type: get
-description: /v4/deposit/address
+description: /v1/spot/deposit/address
 parameters:
     -     
         name: chain

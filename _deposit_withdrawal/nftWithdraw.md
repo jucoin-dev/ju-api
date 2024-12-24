@@ -2,7 +2,7 @@
 title: BTCsn withdraw
 position_number: 7
 type: post
-description: /v4/nft/withdraw
+description: /v1/spot/nft/withdraw
 parameters:
     -
         name: 'currency'

@@ -2,7 +2,7 @@
 title: Update net asset 
 position_number: 2
 type: put
-description: /v4/etf/net-asset
+description: /v1/spot/etf/net-asset
 parameters:
     -
         name: symbol

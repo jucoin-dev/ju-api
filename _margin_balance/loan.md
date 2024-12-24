@@ -3,7 +3,7 @@ title: Get loan list
 position_number: 2
 type: get
 split: -------------------------------------
-description: /v4/lever/loan
+description: /v1/spot/lever/loan
 parameters:
   -
     name: symbol

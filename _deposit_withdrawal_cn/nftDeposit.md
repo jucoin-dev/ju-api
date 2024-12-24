@@ -2,7 +2,7 @@
 title: BTCsn充值
 position_number: 6
 type: post
-description: /v4/nft/deposit
+description: /v1/spot/nft/deposit
 parameters:
     -
         name: 'currency'

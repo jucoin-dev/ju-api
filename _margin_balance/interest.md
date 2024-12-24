@@ -3,7 +3,7 @@ title: Get interest list
 position_number: 4
 type: get
 split: -------------------------------------
-description: /v4/lever/interest
+description: /v1/spot/lever/interest
 parameters:
   -
     name: symbol

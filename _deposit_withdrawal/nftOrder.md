@@ -2,7 +2,7 @@
 title: BTCsn deposit or withdraw history
 position_number: 7
 type: get
-description: /v4/nft/order/history
+description: /v1/spot/nft/order/history
 parameters:
     -
         name: 'type'

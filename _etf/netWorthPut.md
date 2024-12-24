@@ -2,7 +2,7 @@
 title: Update net worth 
 position_number: 1
 type: put
-description: /v4/etf/net-worth
+description: /v1/spot/etf/net-worth
 parameters:
     -
         name: symbol

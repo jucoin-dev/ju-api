@@ -4,7 +4,7 @@ position_number: 1
 type: get
 display: 0
 split: '-------------------------------------'
-description: /v4/public/copy-trade/symbol
+description: /v1/spot/public/copy-trade/symbol
 parameters:
   
 content_markdown: >-

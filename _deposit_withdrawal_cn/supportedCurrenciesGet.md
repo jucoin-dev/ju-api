@@ -2,7 +2,7 @@
 title: 获取XT可充提的币种
 position_number: 1
 type: get
-description: /v4/public/wallet/support/currency
+description: /v1/spot/public/wallet/support/currency
 parameters:
     
 

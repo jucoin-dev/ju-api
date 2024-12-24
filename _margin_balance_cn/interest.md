@@ -3,7 +3,7 @@ title: 获取杠杆利息列表
 position_number: 4
 type: get
 split: -------------------------------------
-description: /v4/lever/interest
+description: /v1/spot/lever/interest
 parameters:
   -
     name: symbol

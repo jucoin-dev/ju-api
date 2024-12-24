@@ -2,7 +2,7 @@
 title: Get history records of deposit 
 position_number: 3
 type: get
-description: /v4/deposit/history
+description: /v1/spot/deposit/history
 parameters:
     -
         name: currency
