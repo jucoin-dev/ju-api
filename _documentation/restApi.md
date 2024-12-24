@@ -7,7 +7,7 @@ parameters:
         content:
 content_markdown: |-
 
-    **production environment: https://sapi.ju.com**
+    **production environment: https://api.ju.com**
     {: .info}
 
 

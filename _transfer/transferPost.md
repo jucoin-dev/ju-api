@@ -1,91 +1,176 @@
----
-title: Transfer between user business systems
-position_number: 1
-type: post
-description: /v1/spot/balance/transfer
-parameters:
-    -
-        name: bizId
-        type: string
-        mandatory: true
-        default:
-        description: Unique id for idempotent processing
-        ranges: Maximum length is 128
-    -
-        name: from
-        type: enum
-        mandatory: true
-        default: 
-        description: Fund transfer out account
-        ranges: <a href="#bizType">bizType enmu</a>
-    -
-        name: to
-        type: enum
-        mandatory: true
-        default: 
-        description: Fund transfer in account
-        ranges: <a href="#bizType">bizType enum</a>
-    -
-        name: currency
-        type: string
-        mandatory: true
-        default:
-        description: Currency name must be all lowercase (usdt,btc)
-        ranges:
-    -
-        name: symbol
-        type: string
-        mandatory: false
-        default:
-        description: The transfer symbol must be all lowercase (this field must be passed if one of the transfer-in and transfer-out parties is leverage)
-        ranges:
-    -
-        name: amount
-        type: bigDecimal
-        mandatory: true
-        default:
-        description: Transfer amount
-        ranges:
-    -
-        name: remark
-        type: string
-        mandatory: false
-        default:
-        description: max 256
-        ranges:
-    -
-        name: toRemark
-        type: string
-        mandatory: false
-        default:
-        description: max 100
-        ranges:
-        
-content_markdown: >-
+[//]: # (---)
 
+[//]: # (title: Transfer between user business systems)
 
-left_code_blocks:
-    -
-        code_block: |-
-            public String transferPost(){
+[//]: # (position_number: 1)
 
+[//]: # (type: post)
 
-            }
-        title: Java
-        language: java
-    -
-        code_block:
-        title: Python
-        language: python
-right_code_blocks:
-    -
-        code_block: |-
-                {
-                  "code": 200,
-                  "msg": "SUCCESS",
-                  "msgInfo": [],
-                  "data": 123456 //The returned unique id of the transfer, it is recommended to store it for reconciliation
-                }
-        title: Response
-        language: json
----
+[//]: # (description: /v1/spot/balance/transfer)
+
+[//]: # (parameters:)
+
+[//]: # (    -)
+
+[//]: # (        name: bizId)
+
+[//]: # (        type: string)
+
+[//]: # (        mandatory: true)
+
+[//]: # (        default:)
+
+[//]: # (        description: Unique id for idempotent processing)
+
+[//]: # (        ranges: Maximum length is 128)
+
+[//]: # (    -)
+
+[//]: # (        name: from)
+
+[//]: # (        type: enum)
+
+[//]: # (        mandatory: true)
+
+[//]: # (        default: )
+
+[//]: # (        description: Fund transfer out account)
+
+[//]: # (        ranges: <a href="#bizType">bizType enmu</a>)
+
+[//]: # (    -)
+
+[//]: # (        name: to)
+
+[//]: # (        type: enum)
+
+[//]: # (        mandatory: true)
+
+[//]: # (        default: )
+
+[//]: # (        description: Fund transfer in account)
+
+[//]: # (        ranges: <a href="#bizType">bizType enum</a>)
+
+[//]: # (    -)
+
+[//]: # (        name: currency)
+
+[//]: # (        type: string)
+
+[//]: # (        mandatory: true)
+
+[//]: # (        default:)
+
+[//]: # (        description: Currency name must be all lowercase &#40;usdt,btc&#41;)
+
+[//]: # (        ranges:)
+
+[//]: # (    -)
+
+[//]: # (        name: symbol)
+
+[//]: # (        type: string)
+
+[//]: # (        mandatory: false)
+
+[//]: # (        default:)
+
+[//]: # (        description: The transfer symbol must be all lowercase &#40;this field must be passed if one of the transfer-in and transfer-out parties is leverage&#41;)
+
+[//]: # (        ranges:)
+
+[//]: # (    -)
+
+[//]: # (        name: amount)
+
+[//]: # (        type: bigDecimal)
+
+[//]: # (        mandatory: true)
+
+[//]: # (        default:)
+
+[//]: # (        description: Transfer amount)
+
+[//]: # (        ranges:)
+
+[//]: # (    -)
+
+[//]: # (        name: remark)
+
+[//]: # (        type: string)
+
+[//]: # (        mandatory: false)
+
+[//]: # (        default:)
+
+[//]: # (        description: max 256)
+
+[//]: # (        ranges:)
+
+[//]: # (    -)
+
+[//]: # (        name: toRemark)
+
+[//]: # (        type: string)
+
+[//]: # (        mandatory: false)
+
+[//]: # (        default:)
+
+[//]: # (        description: max 100)
+
+[//]: # (        ranges:)
+
+[//]: # (        )
+[//]: # (content_markdown: >-)
+
+[//]: # ()
+[//]: # ()
+[//]: # (left_code_blocks:)
+
+[//]: # (    -)
+
+[//]: # (        code_block: |-)
+
+[//]: # (            public String transferPost&#40;&#41;{)
+
+[//]: # ()
+[//]: # ()
+[//]: # (            })
+
+[//]: # (        title: Java)
+
+[//]: # (        language: java)
+
+[//]: # (    -)
+
+[//]: # (        code_block:)
+
+[//]: # (        title: Python)
+
+[//]: # (        language: python)
+
+[//]: # (right_code_blocks:)
+
+[//]: # (    -)
+
+[//]: # (        code_block: |-)
+
+[//]: # (                {)
+
+[//]: # (                  "code": 200,)
+
+[//]: # (                  "msg": "SUCCESS",)
+
+[//]: # (                  "msgInfo": [],)
+
+[//]: # (                  "data": 123456 //The returned unique id of the transfer, it is recommended to store it for reconciliation)
+
+[//]: # (                })
+
+[//]: # (        title: Response)
+
+[//]: # (        language: json)
+
+[//]: # (---)

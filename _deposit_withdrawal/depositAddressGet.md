@@ -34,12 +34,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "address": "0xfa3abfa50eb2006f5be7831658b17aca240d8526",     //wallet address
                     "memo": ""
                   }

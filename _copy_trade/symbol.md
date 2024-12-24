@@ -22,10 +22,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
+                  "code": 200,
                   "mc": "SUCCESS",
-                  "ma": [],
-                  "result": [{
+                  "msgInfo": [],
+                  "data": [{
                      symbolId: 1,        //symbol id
                      symbol: "btc_usdt"  //symbol
                    }]

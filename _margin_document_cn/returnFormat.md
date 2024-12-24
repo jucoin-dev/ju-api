@@ -10,7 +10,7 @@ left_code_blocks:
   title:
   language:
 right_code_blocks:
-- code_block: "{\r\n    \"rc\": 0,\r\n    \"data\": {\r\n      },\r\n    \"mc\": \"SUCCESS\"\r\n    \"ma\": []\r\n}"
+- code_block: "{\r\n    \"code\": 200,\r\n    \"data\": {\r\n      },\r\n    \"msg\": \"SUCCESS\"\r\n    \"msgInfo\": []\r\n}"
   title: Response
   language: json
 ---

@@ -8,21 +8,21 @@ parameters:
   -
     name: symbol
     type: string
-    mandatory: true
+    mandatory: false
     default:
     description: 市场
     ranges:
   -
     name: startTime
     type: long
-    mandatory: true
+    mandatory: false
     default:
     description: 开始时间
     ranges:
   -
     name: endTime
     type: long
-    mandatory: true
+    mandatory: false
     default:
     description: 结束时间
     ranges:
@@ -35,8 +35,8 @@ parameters:
     ranges:
   -
     name: direction
-    type: string
-    mandatory: true
+    type: enum
+    mandatory: false
     default:
     description: 分页方向  NEXT/PREV
     ranges:
@@ -46,7 +46,7 @@ parameters:
     mandatory: false
     default: 20
     description: 页数
-    ranges:
+    ranges: 1-100
   
 content_markdown: 
 
@@ -63,10 +63,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [{}],
-                  "result": {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [{}],
+                  "data": {
                       "hasNext": true,               //是否有下一页
                       "hasPrev": true,               //是否有上一页
                       "items":[{

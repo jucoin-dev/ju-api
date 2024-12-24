@@ -28,10 +28,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [{}],
-                  "result": {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [{}],
+                  "data": {
                       "btcLoanAmount": 0,               //折算BTC借贷资产
                       "btcNetAmount": 0,                //折算BTD总资产
                       "symbol": "string",               //市场

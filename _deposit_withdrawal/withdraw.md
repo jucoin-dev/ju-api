@@ -73,10 +73,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                    "rc": 0,
+                    "code": 200,
                     "mc": "SUCCESS",
-                    "ma": [],
-                    "result": {      
+                    "msgInfo": [],
+                    "data": {      
                         "id": 100    //Long  Withdrawal record id, used for querying withdrawal history later
                     }
                 }

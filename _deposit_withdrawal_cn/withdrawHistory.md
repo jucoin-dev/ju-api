@@ -83,12 +83,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                         "hasPrev": true,                       //是否有上一页
                         "hasNext": true,                       //是否有下一页
                         "items": [

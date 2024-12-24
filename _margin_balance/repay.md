@@ -15,7 +15,7 @@ parameters:
   -
     name: startTime
     type: long
-    mandatory: true
+    mandatory: false
     default:
     description: start time
     ranges:
@@ -35,8 +35,8 @@ parameters:
     ranges:
   -
     name: direction
-    type: string
-    mandatory: true
+    type: enum
+    mandatory: false
     default:
     description: page direction  NEXT/PREV
     ranges:
@@ -46,7 +46,7 @@ parameters:
     mandatory: false
     default: 20
     description: page limit
-    ranges:
+    ranges: 1-100
   
 content_markdown: 
 
@@ -63,10 +63,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [{}],
-                  "result": {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [{}],
+                  "data": {
                       "hasNext": true,               //whether has next page
                       "hasPrev": true,               //whether has previous page
                       "items":[{

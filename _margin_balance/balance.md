@@ -28,10 +28,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [{}],
-                  "result": {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [{}],
+                  "data": {
                       "btcLoanAmount": 0,               //convert BTC loan assets
                       "btcNetAmount": 0,                //Convert BTC net assets
                       "symbol": "string",               //symbol

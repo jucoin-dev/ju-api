@@ -76,12 +76,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "hasPrev": true,            //Is there a previous page
                     "hasNext": true,            //Is there a next page
                     "items": [
