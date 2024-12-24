@@ -55,11 +55,11 @@ collections:
     type: spot
     language: en
     position_number: 8
-  transfer:
-    title: Transfer
-    type: spot
-    language: en
-    position_number: 9
+#  transfer:
+#    title: Transfer
+#    type: spot
+#    language: en
+#    position_number: 9
   websocket_public:
     title: WEBSOCKET(public)
     type: spot
@@ -100,11 +100,11 @@ collections:
     type: spot
     language: cn
     position_number: 18
-  transfer_cn:
-    title: 划转
-    type: spot
-    language: cn
-    position_number: 19
+#  transfer_cn:
+#    title: 划转
+#    type: spot
+#    language: cn
+#    position_number: 19
   websocket_public_cn:
     title: WEBSOCKET(public)
     type: spot
