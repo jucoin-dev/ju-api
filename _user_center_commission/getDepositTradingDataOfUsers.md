@@ -2,7 +2,7 @@
 title: Get Deposit &  Trading Data of Users
 position_number: 2
 type: get
-description: /v4/referal/invite/user/data
+description: /api/referal/invite/user/data
 parameters:
     -
         name: startTime
@@ -44,10 +44,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "ma": [],
-                  "mc": "SUCCESS",
-                  "rc": 0,
-                  "result": {
+                  "msgInfo": [],
+                  "msg": "SUCCESS",
+                  "code": 200,
+                  "data": {
                     "userId": 123456789,                //User ID
                     "role": "PARTNER",                  //User role
                     "deposit": true,                    //Deposit status

@@ -2,7 +2,7 @@
 title: 成交查询
 position_number: 1
 type: get
-description: /v4/trade
+description: /v1/spot/trade
 parameters:
     -
         name: symbol
@@ -13,7 +13,7 @@ parameters:
         ranges:
     -
         name: bizType
-        type: string
+        type: enum
         mandatory: false
         default:
         description: >-
@@ -21,14 +21,14 @@ parameters:
         ranges:
     -
         name: orderSide
-        type: string
+        type: enum
         mandatory: false
         default:
         description: BUY-买,SELL-卖
         ranges:
     -
         name: orderType
-        type: string
+        type: enum
         mandatory: false
         default:
         description: 订单类型   LIMIT-限价, MARKET-市价
@@ -49,7 +49,7 @@ parameters:
         ranges:
     -
         name: direction
-        type: string
+        type: enum
         mandatory: false
         default:
         description: 查询方向:PREV, NEXT
@@ -59,7 +59,7 @@ parameters:
         type: number
         mandatory: false
         default: '20'
-        description: 限制数量,最大100
+        description: 限制数量,最大100,最小1
         ranges:
     -
         name: startTime
@@ -89,12 +89,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "hasPrev": true,
                     "hasNext": true,
                     "items": [
@@ -113,6 +113,8 @@ right_code_blocks:
                         "quoteCurrency": "USDT",            //报价币种类型
                         "fee": "0.5",                       //手续费资产金额
                         "feeCurrency": "USDT",              //手续费资产类型
+                        "nftId": "000012313",               //nftId
+                        "symbolType": "nft",               //交易对类型
                         "takerMaker": "taker"               //takerMaker
                       }
                     ]

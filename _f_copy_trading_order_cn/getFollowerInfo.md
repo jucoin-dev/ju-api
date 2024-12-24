@@ -2,7 +2,7 @@
 title: 获取跟单员信息
 position_number: 28
 type: get
-description: /future/copytrade/user/v1/copy-trade/leader-relation 	
+description: /v1/future-u/ct/copy-trade/leader-relation 	
 parameters:
     -
        name: leaderAccountId
@@ -29,10 +29,10 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                    "returnCode": 0,
-                    "msgInfo": "success",
-                    "error": null,
-                    "result": {
+                    "code": 200,
+                    "msg": "success",
+                    "msgInfo": null,
+                    "data": {
                             "leaderAccountId": 0, // 交易员accountId
                             "symbols": "string", // 市场
                             "followLoss": 0, // 跟单止损

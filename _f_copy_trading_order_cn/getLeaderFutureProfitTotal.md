@@ -2,7 +2,7 @@
 title: 获取带单员预计待分润汇总
 position_number: 6
 type: get
-description: /future/copytrade/user/v1/copy-trade/my-profit-future-total
+description: /v1/future-u/ct/copy-trade/my-profit-future-total
 parameters:
 
 content_markdown: >-
@@ -22,10 +22,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": 0 // 待分润总量
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": 0 // 待分润总量
                         }
         title: Response
         language: json

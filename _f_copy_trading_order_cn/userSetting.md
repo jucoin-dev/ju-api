@@ -2,7 +2,7 @@
 title: 获取交易员/跟单员设置信息
 position_number: 9
 type: get
-description: /future/copytrade/user/v1/copy-trade/user-settings
+description: /v1/future-u/ct/copy-trade/user-settings
 parameters:
 
 content_markdown: >-
@@ -22,10 +22,10 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                    "returnCode": 0,
-                    "msgInfo": "success",
-                    "error": null,
-                    "result": {
+                    "code": 200,
+                    "msg": "success",
+                    "msgInfo": null,
+                    "data": {
                             "id": 0, // id
                             "intro": "string", // 简介
                             "followCapitalMin": 0, // 最小跟单本金

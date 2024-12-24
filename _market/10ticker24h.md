@@ -3,7 +3,7 @@ title: Get 24h statistics ticker
 position_number: 11
 type: get
 split: -------------------------------------
-description: /v4/public/ticker/24h
+description: /v1/spot/public/ticker/24h
 parameters:
     -
         name: symbol
@@ -21,7 +21,7 @@ parameters:
         ranges:
     -
         name: tags
-        type: string
+        type: array
         mandatory: false
         default:
         description: 'Set of tags, separated by commas, currently only supports spot'
@@ -49,10 +49,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": [
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": [
                     {
                       "s": "btc_usdt",      //symbol
                       "t": 1661856036925,   //time 

@@ -2,7 +2,7 @@
 title: Modify user account apiKey
 position_number: 3
 type: put
-description: /v4/user/account/api-key
+description: /api/user/account/api-key
 parameters:
     -
         name: id
@@ -65,12 +65,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                      "id": 4564,                                             //apiKey id
                      "userAccountId": "1626456841938669570",                 //account id
                      "userAccountLevel": 2,                                  //account level: 1-master account; 2-sub account

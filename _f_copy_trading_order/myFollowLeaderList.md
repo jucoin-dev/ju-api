@@ -2,7 +2,7 @@
 title: Get my current leaders
 position_number: 17
 type: get
-description: /future/copytrade/user/v1/copy-trade/my-follow-list
+description: /v1/future-u/ct/copy-trade/my-follow-list
 parameters:
     
 content_markdown: >-
@@ -22,10 +22,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": [number,number] // leader accountId
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": [number,number] // leader accountId
                         }
         title: Response
         language: json

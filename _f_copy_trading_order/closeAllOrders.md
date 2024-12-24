@@ -2,7 +2,7 @@
 title: Close all orders
 position_number: 11
 type: post
-description: /future/copytrade/order/v1/copy-trade/close-all  	
+description: /v1/future-u/ct/copy-trade/close-all  	
 parameters:
     -
         name: symbol
@@ -35,10 +35,10 @@ right_code_blocks:
     - 
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": Boolean //true=success false=fail
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": Boolean //true=success false=fail
                         }
         title: Response
         language: json

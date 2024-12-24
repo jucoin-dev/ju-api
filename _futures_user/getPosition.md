@@ -2,7 +2,7 @@
 title: Get Position Information
 position_number: 7
 type: get
-description: /future/user/v1/position/list
+description: /v1/future-u/user/position/list
 parameters:
     -
         name: symbol
@@ -24,12 +24,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
               "autoMargin": false, //Whether to automatically call margin
               "availableCloseSize": 0, //Available quantity (Cont)
@@ -45,7 +45,7 @@ right_code_blocks:
               "symbol": "" //Trading pair
             }
           ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

@@ -2,7 +2,7 @@
 title: 获取带单员历史带单
 position_number: 2
 type: get
-description: /future/copytrade/order/v1/copy-trade/leader-order-history
+description: /v1/future-u/ct/copy-trade/leader-order-history
 parameters:
     -
         name: type
@@ -57,10 +57,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": {
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": {
                             "hasPrev": false,
                             "hasNext": false,
                             "items": [

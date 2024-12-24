@@ -2,7 +2,7 @@
 title: 根据id查询订单
 position_number: 4
 type: get
-description: /future/trade/v1/order/detail
+description: /v1/future-u/trade/order/detail
 parameters:
   - name: orderId
     type: integer
@@ -16,18 +16,18 @@ content_markdown: |-
 
               200/s/apikey
 left_code_blocks:
-  - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+  - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/trade/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
     title: Java
     language: java
 right_code_blocks:
   - code_block: |-
       {
-        "error": {
+        "msgInfo": {
           "code": "",
           "msg": ""
         },
-        "msgInfo": "",
-        "result": {
+        "msg": "",
+        "data": {
           "avgPrice": 0, //成交均价
           "closePosition": false, //是否条件全平仓
           "closeProfit": 0, //平仓盈亏
@@ -48,7 +48,7 @@ right_code_blocks:
           "triggerProfitPrice": 0, //止盈触发价
           "triggerStopPrice": 0 //止损触发价
         },
-        "returnCode": 0
+        "code": 200
       }
     title: Response
     language: json

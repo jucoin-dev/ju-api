@@ -2,7 +2,7 @@
 title: Delete user account apiKey
 position_number: 4
 type: delete
-description: /v4/user/account/api-key/{apikeyId}
+description: /api/user/account/api-key/{apikeyId}
 parameters:
     -
         name: apikeyId
@@ -30,12 +30,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": true    //true: success; false/null: unsuccess
+                  "data": true    //true: success; false/null: unsuccess
                 }
         title: Response
         language: json

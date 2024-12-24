@@ -2,7 +2,7 @@
 title: Query single
 position_number: 1
 type: get
-description: /v4/order
+description: /v1/spot/order
 parameters:
     -
         name: orderId
@@ -36,12 +36,12 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                      "rc": 0,
-                      "mc": "string",
-                      "ma": [
+                      "code": 200,
+                      "msg": "string",
+                      "msgInfo": [
                         {}
                       ],
-                      "result": {
+                      "data": {
                         "symbol": "BTC_USDT",   
                         "orderId": "6216559590087220004",  
                         "clientOrderId": "16559590087220001",  
@@ -59,7 +59,9 @@ right_code_blocks:
                         "tradeQuote": "48000",              //transaction amount
                         "avgPrice": "42350",                //average transaction price
                         "fee": "string",                    //handling fee
-                        "feeCurrency": "string",   
+                        "feeCurrency": "string",  
+                        "nftId": "string",
+                        "symbolType": "string",
                         "state": "NEW",                     //order stat NEW,PARTIALLY_FILLED,FILLED,CANCELED,REJECTED,EXPIRED
                         "deductServices":[{                 //Fee deduction list (if set JU deduction fee and the deduction occurs, use this field to represent the trade fee. Otherwise, use the original fee and feeCurrency fields to represent the trade fee).  
                                               "fee":"0.1",     
@@ -69,7 +71,9 @@ right_code_blocks:
                                               "fee":"0.001",
                                               "feeCurrency":"btc"
                                           }],
+                        "closed": true,
                         "time": 1655958915583,              //order time
+                        "ip": "127.0.0.1",                      //ip address
                         "updatedTime": 1655958915583  
                       }
                     }

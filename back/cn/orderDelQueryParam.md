@@ -3,7 +3,7 @@ title: 单笔撤单-查询参数
 position_number: 3
 type: delete
 split: -------------------------------------
-description: /v4/order
+description: /v1/spot/order
 parameters:
     -
         name: orderId
@@ -28,7 +28,19 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"string\",\r\n  \"ma\": [\r\n    {}\r\n  ],\r\n  \"result\": {\r\n    \"cancelId\": \"6216559590087220004\"\r\n  }\r\n}"
+        code_block:  |-
+          {
+            "code": 200,
+            "msg": "string",
+            "msgInfo": [
+              {}
+            ],
+            "data": {
+              "orderId": "123",                 
+              "cancelId": "0",                 
+              "clientCancelId": "123"          
+            }
+          }
         title: Response
         language: json
 ---

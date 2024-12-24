@@ -7,7 +7,7 @@ content:
 content_markdown: |-
     | httpStatus | 描述 |
     | --- | --- |
-    | 200 | 请求成功，请进一步查看rc、mc部分 |
+    | 200 | 请求成功，请进一步查看code、msg部分 |
     | 404 | 接口不存在 |
     | 429 | 请求过于频繁，请按照限速要求，控制请求速率 |
     | 500 | 服务异常 |
@@ -15,13 +15,13 @@ content_markdown: |-
     | 503 | 服务不可用，请稍后重试 |
     
 
-    | rc | return Code |
+    | code | return Code |
     | --- | --- |
-    | 0 | 业务成功 |
-    | 1 | 业务失败 |
+    | 200 | 业务成功 |
+    | 500 | 业务失败 |
     
     
-    | mc | message code |
+    | msg | message code |
     | --- | --- |
     | SUCCESS | 成功 |
     | FAILURE | 失败 |

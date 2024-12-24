@@ -2,7 +2,7 @@
 title: Create track
 position_number: 13
 type: post
-description: /future/trade/v1/entrust/create-track
+description: /v1/future-u/trade/entrust/create-track
 remark: Content-Type = application/x-www-form-urlencoded
 parameters:
     -
@@ -109,13 +109,13 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+          "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {},
-          "returnCode": 0
+          "msg": "",
+          "data": {},
+          "code": 200
         }
       title: Response
       language: json

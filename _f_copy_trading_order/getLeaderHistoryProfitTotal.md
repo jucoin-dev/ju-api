@@ -2,7 +2,7 @@
 title: Get leader future profit total
 position_number: 4
 type: get
-description: /future/copytrade/user/v1/copy-trade/my-profit-history
+description: /v1/future-u/ct/copy-trade/my-profit-history
 parameters:
     -
         name: direction
@@ -42,10 +42,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": {
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": {
                             "hasPrev": false,
                             "hasNext": false,
                              "items": [

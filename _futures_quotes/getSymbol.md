@@ -2,7 +2,7 @@
 title: Get Configuration Information for Single Trading Pair
 position_number: 3
 type: get
-description: /future/market/v1/public/symbol/detail
+description: /v1/future-u/market/public/symbol/detail
 parameters:
     -
         name: symbol
@@ -14,18 +14,18 @@ parameters:
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:
     -
-        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/market/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
                  "baseCoin": "",      //Target Assets
                  "baseCoinDisplayPrecision": 0,  //Displayed target currency precision
                  "baseCoinPrecision": 0,  //Target currency precision
@@ -82,7 +82,7 @@ right_code_blocks:
                  "tradeSwitch": false,           //Trading pair switch
                  "underlyingType": ""            //Target type, Coin-M,USDT-M
               },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

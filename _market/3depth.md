@@ -3,7 +3,7 @@ title: Get depth data
 position_number: 4
 type: get
 split: -------------------------------------
-description: /v4/public/depth
+description: /v1/spot/public/depth
 parameters:
     -
         name: symbol
@@ -16,13 +16,13 @@ parameters:
         name: limit
         type: number
         mandatory: false
-        default: '100'
-        description: minimum number of queries is 100
-        ranges: 1~500
+        default: '50'
+        description: 
+        ranges: 1~1000
 content_markdown: >-
     #### **Limit Flow Rules**
     
-    10/s/ip
+    1/s/ip
 
 
 left_code_blocks:
@@ -42,10 +42,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": {
                     "timestamp": 1662445330524,  
                     "lastUpdateId": 137333589606963580,     //Last updated record
                     "bids": [                               //buy order([?][0]=price;[?][1]=pending order volume)

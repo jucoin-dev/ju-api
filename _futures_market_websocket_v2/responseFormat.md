@@ -18,7 +18,7 @@ left_code_blocks:
         code_block: |-
             {
                 "id": "{id}",   //call back ID
-                "code": 1,      //result 0=success;1=fail;2=listenKey invalid
+                "code": 1,      //data 0=success;1=fail;2=listenKey invalid
                 "msg": ""
             }
         title: format

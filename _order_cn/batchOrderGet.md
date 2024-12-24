@@ -2,11 +2,11 @@
 title: 批量获取
 position_number: 4
 type: get
-description: /v4/batch-order
+description: /v1/spot/batch-order
 parameters:
     -
         name: orderIds
-        type: string
+        type: long
         mandatory: true
         default:
         description: '订单ID集合，逗号分割 eg:  6216559590087220004,6216559590087220004'
@@ -29,12 +29,12 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                      "rc": 0,
-                      "mc": "string",
-                      "ma": [
+                      "code": 200,
+                      "msg": "string",
+                      "msgInfo": [
                         {}
                       ],
-                      "result": [
+                      "data": [
                         {
                           "symbol": "BTC_USDT",
                           "orderId": "6216559590087220004",
@@ -54,6 +54,8 @@ right_code_blocks:
                           "avgPrice": "42350",
                           "fee": "string",
                           "feeCurrency": "string",
+                          "nftId": "string",
+                          "symbolType": "string",
                           "state": "NEW",
                           "deductServices":[{   //手续费抵扣列表（如果设置手续费抵扣并产生抵扣，使用该字段代表手续费，没有抵扣使用原有fee、feeCurrency字段代表手续费）
                                                 "fee":"0.1",     
@@ -63,6 +65,7 @@ right_code_blocks:
                                                 "fee":"0.001",
                                                 "feeCurrency":"btc"
                                             }],
+                          "closed": true,
                           "time": 1655958915583,
                           "ip": "127.0.0.1",
                           "updatedTime": 1655958915583

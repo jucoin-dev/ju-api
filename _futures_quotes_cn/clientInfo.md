@@ -29,10 +29,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "returnCode": 0,
-                  "msgInfo": "success",
-                  "error": null
-                  "result": {
+                  "code": 200,
+                  "msg": "success",
+                  "msgInfo": null
+                  "data": {
                     "ip": 192.168.1.1  
                   }
                 }

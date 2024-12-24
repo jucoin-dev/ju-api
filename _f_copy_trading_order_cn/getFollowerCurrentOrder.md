@@ -2,7 +2,7 @@
 title: 获取当前跟单
 position_number: 13
 type: get
-description: /future/copytrade/order/v1/copy-trade/follower-order-list
+description: /v1/future-u/ct/copy-trade/follower-order-list
 parameters:
     -
         name: type
@@ -56,10 +56,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": [
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": [
                                 {
                                 "symbolName": "string", // 市场名称
                                 "positionType": "string", // 仓位类型:CROSSED(全仓);ISOLATED(逐仓)

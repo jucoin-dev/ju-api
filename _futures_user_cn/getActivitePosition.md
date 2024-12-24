@@ -2,7 +2,7 @@
 title: 获取活跃持仓信息
 position_number: 7
 type: get
-description: /future/user/v1/position
+description: /v1/future-u/user/position
 parameters:
   -
     name: symbol
@@ -24,13 +24,13 @@ left_code_blocks:
 right_code_blocks:
   - code_block: |-
       {
-        "error": {
+        "msgInfo": {
           "args": [],
           "code": "",
           "msg": ""
         },
-        "msgInfo": "",
-        "result": [
+        "msg": "",
+        "data": [
           {
             "autoMargin": false, // 是否自动追加保证金
             "availableCloseSize": 0, // 可平仓数量（张）
@@ -56,7 +56,7 @@ right_code_blocks:
             "welfareAccount": true
           }
         ],
-        "returnCode": 0
+        "code": 200
       }
     title: Response
     language: json

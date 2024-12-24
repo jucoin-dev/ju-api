@@ -2,7 +2,7 @@
 title: 获取账户相关信息
 position_number: 1
 type: get
-description: /future/user/v1/account/info
+description: /v1/future-u/user/account/info
 content_markdown: |-
 
                #### **限流规则**
@@ -16,12 +16,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "accountId": 0, //帐户id
             "allowOpenPosition": false, //是否可开仓
             "allowTrade": false, //是否可以交易
@@ -30,7 +30,7 @@ right_code_blocks:
             "state": 0, //用户状态
             "userId": 0 //用户id
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

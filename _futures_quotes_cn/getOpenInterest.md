@@ -2,7 +2,7 @@
 title: 获取交易对开仓量
 position_number: 21
 type: get
-description: /future/market/v1/public/contract/open-interest
+description: /v1/future-u/market/public/contract/open-interest
 parameters:
     -
         name: symbol
@@ -21,24 +21,24 @@ content_markdown: >-
   
 left_code_blocks:
     -
-        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/market/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "symbol": "", //交易对
             "openInterest": "", //开仓量
             "openInterestUsd": 0, //开仓价值
             "time": "", //时间
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

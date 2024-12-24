@@ -2,7 +2,7 @@
 title: 一键平仓
 position_number: 12
 type: post
-description: /future/user/v1/position/close-all
+description: /v1/future-u/user/position/close-all
 content_markdown: |-
 
                #### **限流规则**
@@ -16,13 +16,13 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": true,
-          "returnCode": 0
+          "msg": "",
+          "data": true,
+          "code": 200
         }
       title: Response
       language: json

@@ -2,7 +2,7 @@
 title: Cancel follow leader
 position_number: 16
 type: post
-description: /future/copytrade/user/v1/copy-trade/cancel-choose-leader
+description: /v1/future-u/ct/copy-trade/cancel-choose-leader
 parameters:
     -
         name: leaderAccountId
@@ -29,10 +29,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": Boolean //true=success false=fail
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": Boolean //true=success false=fail
                         }
         title: Response
         language: json

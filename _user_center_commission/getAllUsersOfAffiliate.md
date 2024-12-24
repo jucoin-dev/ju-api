@@ -2,7 +2,7 @@
 title: Get All Users of Affiliate
 position_number: 1
 type: get
-description: /v4/referal/invite/users
+description: /api/referal/invite/users
 parameters:
     -
         name: startTime
@@ -58,10 +58,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "ma": [],
-                  "mc": "SUCCESS",
-                  "rc": 0,
-                  "result": {
+                  "msgInfo": [],
+                  "msg": "SUCCESS",
+                  "code": 200,
+                  "data": {
                     "hasNext": true,
                     "hasPrev": true,
                     "items": [

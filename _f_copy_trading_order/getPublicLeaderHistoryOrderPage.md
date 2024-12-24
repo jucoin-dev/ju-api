@@ -2,7 +2,7 @@
 title: Public get leader history orders
 position_number: 22
 type: get
-description: /future/copytrade/public/order/v1/public/copy-trade/leader-order-history
+description: /v1/future-u/ct/public/order/v1/public/copy-trade/leader-order-history
 parameters:
     -
         name: type
@@ -64,10 +64,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": [
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": [
                                 {
                                 "symbolName": "string", // symbol
                                 "positionType": "string", // position type:CROSSED;ISOLATED

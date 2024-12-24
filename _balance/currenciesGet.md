@@ -2,10 +2,10 @@
 title: Get currency information
 position_number: 1
 type: get
-description: /v4/public/currencies
+description: /v1/spot/public/currencies
 parameters:
     -
-        name:
+        name: version
         type: string
         mandatory: false
         default:
@@ -25,26 +25,38 @@ right_code_blocks:
     -
         code_block: |-
             {
-              "rc": 0,
-              "mc": "string",
-              "ma": [
+              "code": 200,
+              "msg": "string",
+              "msgInfo": [
                 {}
               ],
-              "result": [
-                {
-                   "id": 11,                //currency id
-                  "currency": "usdt",       //currency name
-                  "fullName": "usdt",       //currency full name
-                  "logo": null,             //currency logo
-                  "cmcLink": null,          //cmc link
-                  "weight": 100,    
-                  "maxPrecision": 6,  
-                  "depositStatus": 1,       //Recharge status(0 close 1 open)
-                  "withdrawStatus": 1,      //Withdrawal status(0 close 1 open)
-                  "convertEnabled": 1,      //Small asset exchange switch[0=close;1=open]
-                  "transferEnabled": 1      //swipe switch[0=close;1=open]
+              "data": {
+                  "time":0,
+                  "version":"",
+                  "currencies": [
+                          {
+                              "id": 11,                
+                              "currency": "usdt",      
+                              "displayName": "",    
+                              "type": "",           
+                              "nominalValue": "",   
+                              "fullName": "usdt",       
+                              "logo": null,             
+                              "cmcLink": null,          
+                              "weight": 100,            
+                              "maxPrecision": 6,        
+                              "depositStatus": 1,       
+                              "withdrawStatus": 1,      
+                              "convertEnabled": 1,      
+                              "transferEnabled": 1,     
+                              "isChainExist": 1,        
+                              "plates": [],              
+                              "isListing": 1,           
+                              "withdrawCloseReason": ""  
+                          }
+                  ]
+
                 }
-              ]
             }
         title: Response
         language: json

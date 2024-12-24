@@ -3,7 +3,7 @@ title: Alter the automatical margin call
 position_number: 11
 type: post
 display: 0
-description: /future/user/v1/position/auto-margin
+description: /v1/future-u/user/position/auto-margin
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
@@ -40,13 +40,13 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+          "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {},
-          "returnCode": 0
+          "msg": "",
+          "data": {},
+          "code": 200
         }
       title: Response
       language: json

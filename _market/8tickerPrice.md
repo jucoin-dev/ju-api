@@ -2,7 +2,7 @@
 title: Get latest prices ticker
 position_number: 9
 type: get
-description: /v4/public/ticker/price
+description: /v1/spot/public/ticker/price
 parameters:
     -
         name: symbol
@@ -20,7 +20,7 @@ parameters:
         ranges:
     -
         name: tags
-        type: string
+        type: array
         mandatory: false
         default:
         description: 'Set of tags, separated by commas, currently only supports spot'
@@ -52,10 +52,10 @@ right_code_blocks:
     -
         code_block: |-
             {
-              "rc": 0,
-              "mc": "SUCCESS",
-              "ma": [],
-              "result": [
+              "code": 200,
+              "msg": "SUCCESS",
+              "msgInfo": [],
+              "data": [
                 {
                   "s": "btc_usdt",      //symbol
                   "t": 1661856036925    //time

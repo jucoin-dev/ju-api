@@ -2,7 +2,7 @@
 title: 修改止盈止损
 position_number: 12
 type: post
-description: /future/trade/v1/entrust/update-profit-stop
+description: /v1/future-u/trade/entrust/update-profit-stop
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
   - name: profitId
@@ -31,13 +31,13 @@ content_markdown: |-
 right_code_blocks:
   - code_block: |-
       {
-        "error": {
+        "msgInfo": {
           "code": "",
           "msg": ""
         },
-        "msgInfo": "",
-        "result": {},
-        "returnCode": 0
+        "msg": "",
+        "data": {},
+        "code": 200
       }
     title: Response
     language: json

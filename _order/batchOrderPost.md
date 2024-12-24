@@ -2,7 +2,7 @@
 title: Submit batch order
 position_number: 5
 type: post
-description: /v4/batch-order
+description: /v1/spot/batch-order
 parameters:
     -
         name: clientBatchId
@@ -34,28 +34,28 @@ parameters:
         ranges:
     -
         name: item.side
-        type: string
+        type: enum
         mandatory: true
         default:
         description: "BUY,SELL"
         ranges:
     -
         name: item.type
-        type: string
+        type: enum
         mandatory: true
         default:
         description: "order type:LIMIT,MARKET"
         ranges:
     -
         name: item.timeInForce
-        type: string
+        type: enum
         mandatory: true
         default:
         description: effective way:GTC, FOK, IOC, GTX
         ranges:
     -
         name: item.bizType
-        type: string
+        type: enum
         mandatory: true
         default:
         description: "SPOT, LEVER"
@@ -80,6 +80,27 @@ parameters:
         mandatory: false
         default:
         description: amount. Required if it is the LIMIT price or the order is the market price when placing an order by amount
+        ranges:
+    -
+        name: item.media
+        type: string
+        mandatory: false
+        default:
+        escription: media
+        ranges:   
+    -
+        name: item.mediaChannel
+        type: string
+        mandatory: false
+        default:
+        escription: mediaChannel
+        ranges:
+    -
+        name: item.nftId
+        type: string
+        mandatory: false
+        default:
+        escription: nft id
         ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
@@ -124,19 +145,19 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "batchId": "123", 
                     "items": [   
                       {
                         "index": "0", // start with 0 
                         "clientOrderId": "123", 
                         "orderId": "123", 
-                        "reject": "false", 
+                        "reject": false, 
                         "reason": "invalid price precision" 
                       }
                     ]

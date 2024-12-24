@@ -2,7 +2,7 @@
 title: 撤销订单
 position_number: 6
 type: post
-description: /future/trade/v1/order/cancel
+description: /v1/future-u/trade/order/cancel
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
   - name: orderId
@@ -19,13 +19,13 @@ content_markdown: |-
 right_code_blocks:
   - code_block: |-
       {
-        "error": {
+        "msgInfo": {
           "code": "",
           "msg": ""
         },
-        "msgInfo": "",
-        "result": "", //订单id
-        "returnCode": 0
+        "msg": "",
+        "data": "", //订单id
+        "code": 200
       }
     title: Response
     language: json

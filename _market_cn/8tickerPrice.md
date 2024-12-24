@@ -2,7 +2,7 @@
 title: 获取最新价格ticker
 position_number: 9
 type: get
-description: /v4/public/ticker/price
+description: /v1/spot/public/ticker/price
 parameters:
     -
         name: symbol
@@ -20,7 +20,7 @@ parameters:
         ranges:
     -
         name: tags
-        type: string
+        type: array
         mandatory: false
         default:
         description: '标签集合,逗号分割，当前仅支持 spot'
@@ -52,10 +52,10 @@ right_code_blocks:
     -
         code_block: |-
             {
-              "rc": 0,
-              "mc": "SUCCESS",
-              "ma": [],
-              "result": [
+              "code": 200,
+              "msg": "SUCCESS",
+              "msgInfo": [],
+              "data": [
                 {
                   "s": "btc_usdt",     //交易对(symbol)
                   "t": 1661856036925   //时间(time)

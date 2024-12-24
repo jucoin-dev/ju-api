@@ -2,7 +2,7 @@
 title: Get leader history profit detail
 position_number: 3
 type: get
-description: /future/copytrade/user/v1/copy-trade/my-profit-history-detail
+description: /v1/future-u/ct/copy-trade/my-profit-history-detail
 parameters:
     -
         name: divideTime
@@ -49,10 +49,10 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                    "returnCode": 0,
-                    "msgInfo": "success",
-                    "error": null,
-                    "result": {
+                    "code": 200,
+                    "msg": "success",
+                    "msgInfo": null,
+                    "data": {
                             "hasPrev": false,
                             "hasNext": false,
                             "items": [

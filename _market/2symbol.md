@@ -3,7 +3,7 @@ title: Get symbol information
 position_number: 3
 type: get
 split: -------------------------------------
-description: /v4/public/symbol
+description: /v1/spot/public/symbol
 parameters:
     -
         name: symbol
@@ -15,6 +15,8 @@ parameters:
     -
         name: symbols
         type: array
+        items:
+          type: string
         mandatory: false
         default:
         description: 'Collection of trading pairs. Priority is higher than symbol. eg: btc_usdt,eth_usdt'
@@ -27,6 +29,15 @@ parameters:
         description: |-
             Version number, when the request version number is consistent with the response content version, the list will not be returned, reducing IO
             eg: 2e14d2cd5czcb2c2af2c1db6
+        ranges:
+    -
+        name: tags
+        type: array
+        items:
+          type: string
+        mandatory: false
+        default: []
+        description:
         ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
@@ -233,17 +244,20 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": {
                     "time": 1662444177871,  
                     "version": "7cd2cfab0dc979339f1de904bd90c9cb",  
                     "symbols": [                   
                       {
                         "id": 614,                   //ID
-                        "symbol": "btc_usdt",         
+                        "symbol": "btc_usdt",        
+                        "displayName": "string",                    //展示名称
+                        "type": "string",  
                         "state": "ONLINE",           //symbol state [ONLINE;OFFLINE,DELISTED]
+                        "stateTime": null,                          //状态时间
                         "tradingEnabled": true,
                         "openapiEnabled": true,      //Openapi transaction is available or not
                         "nextStateTime": null,              
@@ -251,14 +265,13 @@ right_code_blocks:
                         "depthMergePrecision": 5,    //Depth Merge Accuracy
                         "baseCurrency": "btc",                  
                         "baseCurrencyPrecision": 5,              
-                        "baseCurrencyId": 2,                 
+                        "baseCurrencyId": 2,       
+                        "baseCurrencyLogo": "string",               //标的资产LOGO
                         "quoteCurrency": "usdt",             
                         "quoteCurrencyPrecision": 6,        
                         "quoteCurrencyId": 11,             
                         "pricePrecision": 4,         //Transaction price accuracy
                         "quantityPrecision": 6,
-                        "takerFeeRate": 0.001,       //Taker fee rate
-                        "makerFeeRate": 0.002,       //Maker fee rate
                         "orderTypes": [              //Order Type [LIMIT;MARKET]
                           "LIMIT",
                           "MARKET"

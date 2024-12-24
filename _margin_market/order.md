@@ -3,7 +3,7 @@ title: Create order
 position_number: 2
 type: post
 split: -------------------------------------
-description: /v4/lever/order
+description: /v1/spot/lever/order
 parameters:
   -
     name: marketName
@@ -64,10 +64,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": {}
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": 123
                 }
         title: Response
         language: json

@@ -2,7 +2,7 @@
 title: Submit order
 position_number: 2
 type: post
-description: /v4/order
+description: /v1/spot/order
 parameters:
     -
         name: symbol
@@ -20,28 +20,28 @@ parameters:
         ranges:
     -
         name: side
-        type: string
+        type: enum
         mandatory: true
         default:
         description: "BUY,SELL"
         ranges:
     -
         name: type
-        type: string
+        type: enum
         mandatory: true
         default:
         description: "order type:LIMIT,MARKET"
         ranges:
     -
         name: timeInForce
-        type: string
+        type: enum
         mandatory: true
         default:
         description: effective way:GTC, FOK, IOC, GTX
         ranges:
     -
         name: bizType
-        type: string
+        type: enum
         mandatory: true
         default:
         description: "SPOT, LEVER"
@@ -74,6 +74,20 @@ parameters:
         default:
         description: nft id
         ranges:
+    -
+        name: media
+        type: string
+        mandatory: false
+        default:
+        escription: media
+        ranges:
+    -
+        name: mediaChannel
+        type: string
+        mandatory: false
+        default:
+        escription: mediaChannel
+        ranges:
 content_markdown: >-
     #### **Remark**
 
@@ -81,7 +95,7 @@ content_markdown: >-
   
     #### **Limit Flow Rules**
     
-    20/s/apikey
+    50/s/apikey
 
 left_code_blocks:
     -
@@ -100,14 +114,14 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "orderId": "6216559590087220004",
-                    "ip": "127.0.0.1",                  // ip address
+                    "clientOrderId": "6216559590087220004"                 
                   }
                 }
         title: Response

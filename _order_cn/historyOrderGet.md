@@ -2,7 +2,7 @@
 title: 历史订单查询
 position_number: 10
 type: get
-description: /v4/history-order
+description: /v1/spot/history-order
 parameters:
     -
         name: symbol
@@ -13,7 +13,7 @@ parameters:
         ranges:
     -
         name: bizType
-        type: string
+        type: enum
         mandatory: false
         default:
         description: >-
@@ -21,21 +21,21 @@ parameters:
         ranges:
     -
         name: side
-        type: string
+        type: enum
         mandatory: false
         default:
         description: BUY-买,SELL-卖
         ranges:
     -
         name: type
-        type: string
+        type: enum
         mandatory: false
         default:
         description: 订单类型   LIMIT-限价, MARKET-市价
         ranges:
     -
         name: state
-        type: string
+        type: enum
         mandatory: false
         default:
         description: >-
@@ -51,7 +51,7 @@ parameters:
         ranges:
     -
         name: direction
-        type: string
+        type: enum
         mandatory: false
         default:
         description: 查询方向:PREV, NEXT
@@ -61,7 +61,7 @@ parameters:
         type: number
         mandatory: false
         default: '20'
-        description: 限制数量,最大100
+        description: 限制数量,最大100,最小1
         ranges:
     -
         name: startTime
@@ -101,12 +101,12 @@ right_code_blocks:
     -
         code_block: |-
             {
-              "rc": 0,
-              "mc": "string",
-              "ma": [
+              "code": 200,
+              "msg": "string",
+              "msgInfo": [
                 {}
               ],
-              "result": {
+              "data": {
                 "hasPrev": true,
                 "hasNext": true,
                 "items": [   //内容信息参考单笔获取订单接口
@@ -130,6 +130,8 @@ right_code_blocks:
                     "fee": "string",
                     "feeCurrency": "string",
                     "state": "NEW",
+                    "nftId": "string",
+                    "symbolType": "string",          
                     "deductServices":[{   //手续费抵扣列表（如果设置手续费抵扣并产生抵扣，使用该字段代表手续费，没有抵扣使用原有fee、feeCurrency字段代表手续费）
                                           "fee":"0.1",     
                                           "feeCurrency":"ju"
@@ -138,6 +140,7 @@ right_code_blocks:
                                           "fee":"0.001",
                                           "feeCurrency":"btc"
                                       }],
+                    "closed": true,
                     "time": 1655958915583,
                     "ip": "127.0.0.1",
                     "updatedTime": 1655958915583

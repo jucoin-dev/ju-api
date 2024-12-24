@@ -2,7 +2,7 @@
 title: Query the current pending order
 position_number: 8
 type: get
-description: /v4/open-order
+description: /v1/spot/open-order
 parameters:
     -
         name: symbol
@@ -13,14 +13,14 @@ parameters:
         ranges:
     -
         name: bizType
-        type: string
+        type: enum
         mandatory: false
         default:
         description: "SPOT, LEVER"
         ranges:
     -
         name: side
-        type: string
+        type: enum
         mandatory: false
         default:
         description: BUY,SELL
@@ -42,12 +42,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": [      //For field information, refer to the Get single interface
+                  "data": [      //For field information, refer to the Get single interface
                     {
                       "symbol": "BTC_USDT",
                       "orderId": "6216559590087220004",
@@ -67,6 +67,8 @@ right_code_blocks:
                       "avgPrice": "42350",
                       "fee": "string",
                       "feeCurrency": "string",
+                      "nftId": "string",
+                      "symbolType": "string",
                       "state": "NEW",
                       "deductServices":[{   //Fee deduction list (if set JU deduction fee and the deduction occurs, use this field to represent the trade fee. Otherwise, use the original fee and feeCurrency fields to represent the trade fee). 
                                             "fee":"0.1",     
@@ -76,6 +78,7 @@ right_code_blocks:
                                             "fee":"0.001",
                                             "feeCurrency":"btc"
                                         }],
+                      "closed": true,
                       "time": 1655958915583,
                       "ip": "127.0.0.1",
                       "updatedTime": 1655958915583

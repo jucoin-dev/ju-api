@@ -15,13 +15,13 @@ content_markdown: |-
     | 503 | 服务不可用，请稍后重试 |
     
 
-    | rc | return Code |
+    | code | return Code |
     | --- | --- |
-    | 0 | 业务成功 |
-    | 1 | 业务失败 |
+    | 200 | 业务成功 |
+    | 500 | 业务失败 |
     
     
-    | mc | message code |
+    | msg | message code |
     | --- | --- |
     | SUCCESS | 成功 |
     | FAILURE | 失败 |

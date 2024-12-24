@@ -2,23 +2,23 @@
 title: 获取全交易对的聚合行情信息
 position_number: 17
 type: get
-description: /future/market/v1/public/q/agg-tickers
+description: /v1/future-u/market/public/q/agg-tickers
 parameters:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
     -
-        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/market/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
               "a": "", //24小时成交量
               "ap": "", //卖一价格
@@ -35,7 +35,7 @@ right_code_blocks:
               "v": "" //24小时成交额
             }
           ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

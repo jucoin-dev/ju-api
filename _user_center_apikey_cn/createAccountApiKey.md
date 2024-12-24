@@ -2,7 +2,7 @@
 title: 创建用户账户apiKey
 position_number: 2
 type: post
-description: /v4/user/account/api-key
+description: /api/user/account/api-key
 parameters:
     -
         name: userAccountId
@@ -58,12 +58,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                      "id": 4564,                                             //apiKey id
                      "userAccountId": "1626456841938669570",                 //账户id
                      "userAccountLevel": 2,                                  //账户等级：1-主账户；2-子账户

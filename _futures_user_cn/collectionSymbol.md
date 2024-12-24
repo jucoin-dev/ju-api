@@ -2,7 +2,7 @@
 title: 收藏交易对
 position_number: 14
 type: post
-description: /future/user/v1/user/collection/add
+description: /v1/future-u/user/user/collection/add
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
@@ -25,13 +25,13 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": true,
-          "returnCode": 0
+          "msg": "",
+          "data": true,
+          "code": 200
         }
       title: Response
       language: json

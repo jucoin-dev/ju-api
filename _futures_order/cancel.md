@@ -2,7 +2,7 @@
 title: Cancel Orders
 position_number: 6
 type: post
-description: /future/trade/v1/order/cancel
+description: /v1/future-u/trade/order/cancel
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
   - name: orderId
@@ -19,13 +19,13 @@ content_markdown: |-
 right_code_blocks:
   - code_block: |-
       {
-        "error": {
+        "msgInfo": {
           "code": "",
           "msg": ""
         },
-        "msgInfo": "",
-        "result": "", //Order ID
-        "returnCode": 0
+        "msg": "",
+        "data": "", //Order ID
+        "code": 200
       }
     title: Response
     language: json

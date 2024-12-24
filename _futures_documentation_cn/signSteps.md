@@ -6,7 +6,7 @@ parameters:
 content:
 content_markdown: >-
 
-    http://fapi.ju.com/future/api/v1/public/symbol/detail?symbol=btc_usdt的示例
+    https://api.jcwork.net/v1/future-u/market/public/symbol/detail?symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000的示例
     
     
     以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例 appkey、secret仅供示范：
@@ -43,7 +43,7 @@ content_markdown: >-
       timeInForce: 'GTC',
       side: 'BUY',
       symbol: 'btc_usdt',
-      price: '39000',
+      price: '90000',
       quantity: '2'
     }
 
@@ -70,7 +70,7 @@ content_markdown: >-
 
       路径Path示例：
 
-              /future/api/v1/public/symbol/detail
+              /v1/future-u/market/public/symbol/detail
 
               上述拼接值记作为path
 
@@ -78,7 +78,7 @@ content_markdown: >-
 
       示例 1: 所有参数通过 query string 发送 
 
-                symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=1&price=0.1
+                symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000
 
                 上述值拼接记作query
 
@@ -86,13 +86,13 @@ content_markdown: >-
 
       x-www-form-urlencoded的request  body string :
       
-                symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=1&price=0.1
+                symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000
 
                 上述值拼接记作body
 
       json的request body string :
       
-                {"symbol" : "btc_usdt","side" : "BUY","type":"LIMIT","timeInForce":"GTC","quantity":2,"price":39000}
+                {"symbol" : "btc_usdt","side" : "BUY","type":"LIMIT","timeInForce":"GTC","quantity":2,"price":90000}
 
                 上述值拼接记作body
 
@@ -101,7 +101,7 @@ content_markdown: >-
       queryString: symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC
                 上述拼接值记作query
 
-      requestBody: {"quantity":2,"price":39000}
+      requestBody: {"quantity":2,"price":90000}
                 上述拼接值记作body
 
             整个数据最且拼接值由#符号分别与path、query、body进行拼接成#path、#query、#body，最终拼接值记作为Y=#path#query#body。

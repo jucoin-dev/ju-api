@@ -3,7 +3,7 @@ title: 单笔撤单
 position_number: 3
 type: delete
 split: -------------------------------------
-description: /v4/order/{orderId}
+description: /v1/spot/order/{orderId}
 parameters:
     -
         name: orderId
@@ -31,13 +31,15 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
-                    "cancelId": "6216559590087220004"
+                  "data": {
+                    "cancelId": "6216559590087220004",
+                    "orderId": "string",
+                    "clientCancelId": "string"
                   }
                 }
         title: Response

@@ -2,7 +2,7 @@
 title: Public get leader info
 position_number: 27
 type: get
-description: /future/copytrade/public/user/v1/public/copy-trade/leader-detail-v2 	
+description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-detail-v2 	
 parameters:
     -
        name: accountId
@@ -29,10 +29,10 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                    "returnCode": 0,
-                    "msgInfo": "success",
-                    "error": null,
-                    "result": {
+                    "code": 200,
+                    "msg": "success",
+                    "msgInfo": null,
+                    "data": {
                             "nickName": "string", // nickName
                             "avatar": "string", // avatar
                             "intro": "string", // intro

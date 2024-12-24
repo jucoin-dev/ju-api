@@ -2,7 +2,7 @@
 title: 创建止盈止损
 position_number: 7
 type: post
-description: /future/trade/v1/entrust/create-profit
+description: /v1/future-u/trade/entrust/create-profit
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
@@ -54,19 +54,19 @@ content_markdown: |-
                 200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/trade/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-            "error": {
-            "code": "",
-            "msg": ""
+            "msgInfo": {
+              "code": "",
+              "msg": ""
             },
-            "msgInfo": "",
-            "result": {},
-            "returnCode": 0
+            "msg": "",
+            "data": {},
+            "code": 200
         }
         title: Response
         language: json

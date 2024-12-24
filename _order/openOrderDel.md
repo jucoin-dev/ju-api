@@ -3,7 +3,7 @@ title: Cancel the current pending order
 position_number: 9
 type: delete
 split: -------------------------------------
-description: /v4/open-order
+description: /v1/spot/open-order
 parameters:
     -
         name: symbol
@@ -14,17 +14,24 @@ parameters:
         ranges:
     -
         name: bizType
-        type: string
+        type: enum
         mandatory: true
         default:
         description: "SPOT, LEVER"
         ranges:
     -
         name: side
-        type: string
+        type: enum
         mandatory: false
         default:
         description: BUY,SELL
+        ranges:
+    -
+        name: mode
+        type: enum
+        mandatory: false
+        default:
+        description: CMD, ITERATOR
         ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
@@ -45,12 +52,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {}
+                  "data": {}
                 }
         title: Response
         language: json

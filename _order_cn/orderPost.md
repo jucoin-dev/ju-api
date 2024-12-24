@@ -2,7 +2,7 @@
 title: 单笔下单
 position_number: 2
 type: post
-description: /v4/order
+description: /v1/spot/order
 parameters:
     -
         name: symbol
@@ -20,28 +20,28 @@ parameters:
         ranges:
     -
         name: side
-        type: string
+        type: enum
         mandatory: true
         default:
         description: "买卖方向 \_BUY-买,SELL-卖"
         ranges:
     -
         name: type
-        type: string
+        type: enum
         mandatory: true
         default:
         description: "订单类型 \_LIMIT-限价,MARKET-市价\_"
         ranges:
     -
         name: timeInForce
-        type: string
+        type: enum
         mandatory: true
         default:
         description: 有效方式 GTC, FOK, IOC, GTX
         ranges:
     -
         name: bizType
-        type: string
+        type: enum
         mandatory: true
         default:
         description: >-
@@ -75,6 +75,20 @@ parameters:
         default:
         description: nft id
         ranges:
+    -
+        name: media
+        type: string
+        mandatory: false
+        default:
+        escription: 媒体
+        ranges:
+    -
+        name: mediaChannel
+        type: string
+        mandatory: false
+        default:
+        escription: 媒体渠道
+        ranges:
 content_markdown: >-
     #### **备注**
 
@@ -82,7 +96,7 @@ content_markdown: >-
   
     #### **限流规则**
 
-    20/s/apikey
+    50/s/apikey
 
 left_code_blocks:
     -
@@ -101,14 +115,14 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "orderId": "6216559590087220004",   //订单ID
-                    "ip": "127.0.0.1"                   //ip地址
+                    "clientOrderId": "6216559590087220004" 
                   }
                 }
         title: Response

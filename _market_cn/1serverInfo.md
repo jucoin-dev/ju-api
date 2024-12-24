@@ -2,15 +2,8 @@
 title: 获取服务器时间
 position_number: 1
 type: get 
-description: /v4/public/time
+description: /v1/spot/public/time
 parameters:
-    -
-        name:
-        type: number
-        mandatory: false
-        default:
-        description:
-        ranges:
 content_markdown:
 left_code_blocks:
     -
@@ -29,10 +22,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": {
                     "serverTime": 1662435658062  //服务器时间
                   }
                 }

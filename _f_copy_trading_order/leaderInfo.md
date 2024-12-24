@@ -2,7 +2,7 @@
 title: Get leader info
 position_number: 7
 type: get
-description: /future/copytrade/user/v1/copy-trade/leader-detail
+description: /v1/future-u/ct/copy-trade/leader-detail
 parameters:
 
 content_markdown: >-
@@ -22,10 +22,10 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                    "returnCode": 0,
-                    "msgInfo": "success",
-                    "error": null,
-                    "result": {
+                    "code": 200,
+                    "msg": "success",
+                    "msgInfo": null,
+                    "data": {
                             "nickName": "string", // nickName
                             "avatar": "string", // avatar
                             "intro": "string", // intro

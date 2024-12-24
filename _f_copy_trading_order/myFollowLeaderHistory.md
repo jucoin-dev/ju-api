@@ -2,7 +2,7 @@
 title: Get my history leaders
 position_number: 18
 type: get
-description: /future/copytrade/user/v1/copy-trade/follower-leaders-page
+description: /v1/future-u/ct/copy-trade/follower-leaders-page
 parameters:
     -
         name: type
@@ -49,10 +49,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": {
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": {
                                "hasPrev": false,
                                "hasNext": false,
                                 "items": [

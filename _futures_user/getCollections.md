@@ -2,7 +2,7 @@
 title: List of Collected Trading Pairs
 position_number: 16
 type: get
-description: /future/user/v1/user/collection/list
+description: /v1/future-u/user/user/collection/list
 content_markdown: |-
 
               #### **Limit Flow Rules**
@@ -16,13 +16,13 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [],
-          "returnCode": 0
+          "msg": "",
+          "data": [],
+          "code": 200
         }
       title: Response
       language: json

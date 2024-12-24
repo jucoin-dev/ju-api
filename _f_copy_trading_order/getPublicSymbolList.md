@@ -2,7 +2,7 @@
 title: Get available symbol list
 position_number: 19
 type: get
-description: /future/copytrade/public/user/v1/public/copy-trade/symbol-list
+description: /v1/future-u/ct/public/user/v1/public/copy-trade/symbol-list
 parameters:
     
 content_markdown: >-
@@ -22,10 +22,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": [string,string] // symbols
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": [string,string] // symbols
                         }
         title: Response
         language: json

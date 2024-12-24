@@ -2,7 +2,7 @@
 title: 获取用户资金
 position_number: 4
 type: get
-description: /future/user/v1/balance/list
+description: /v1/future-u/user/balance/list
 
 content_markdown: |-
 
@@ -17,12 +17,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
               "availableBalance": 0,      //可用余额
               "coin": "",                 //币种
@@ -34,7 +34,7 @@ right_code_blocks:
               "walletBalance": 0          //钱包余额
             }
           ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

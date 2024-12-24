@@ -2,10 +2,10 @@
 title: 获取单个币种资产
 position_number: 2
 type: get
-description: /v4/balance
+description: /v1/spot/balance
 parameters:
     -
-        name: 'currency '
+        name: currency
         type: string
         mandatory: true
         default:
@@ -25,18 +25,24 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "currency": "usdt",     //币种
                     "currencyId": 0,        //币种ID
-                    "frozenAmount": 0,      //冻结数量
+                    "frozenAmount": 0,      //不可用(全部冻结=冻结+锁仓+跟单+委托+提现)
+                    "freeze": 0,      //冻结
+                    "lock": 0,      //锁仓
+                    "copyTrade": 0,      //跟单
+                    "trade": 0,      //委托
+                    "withdraw": 0,      //提现
                     "availableAmount": 0,   //可用数量
                     "totalAmount": 0,       //总数量
-                    "convertBtcAmount": 0   //折算BTC数量
+                    "convertBtcAmount": 0,   //折算BTC数量
+                    "convertUsdtAmount": 0   //折算USDT数量
                   }
                 }
         title: Response

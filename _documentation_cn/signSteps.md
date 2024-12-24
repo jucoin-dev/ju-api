@@ -6,7 +6,7 @@ parameters:
 content:
 content_markdown: >-
 
-    以https://sapi.ju-uat.com/v4/order为例。
+    以https://api.ju.com/v1/spot/order为例。
     
     
     以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例 appkey、secret仅供示范：
@@ -72,7 +72,7 @@ content_markdown: >-
 
     路径path示例:
 
-        /v4/order
+        /v1/spot/order
 
         上述拼接值记作为path
 
@@ -149,11 +149,11 @@ content_markdown: >-
 
         签名原始报文样例：
 
-            validate-algorithms=HmacSHA256&validate-appkey=2063495b-85ec-41b3-a810-be84ceb78751&validate-recvwindow=60000&validate-timestamp=1666026215729#POST#/v4/order#{"symbol":"JU_USDT","side":"BUY","type":"LIMIT","timeInForce":"GTC","bizType":"SPOT","price":3,"quantity":2}
+            validate-algorithms=HmacSHA256&validate-appkey=2063495b-85ec-41b3-a810-be84ceb78751&validate-recvwindow=60000&validate-timestamp=1666026215729#POST#/v1/spot/order#{"symbol":"JU_USDT","side":"BUY","type":"LIMIT","timeInForce":"GTC","bizType":"SPOT","price":3,"quantity":2}
 
         请求报文样例：
       
-            curl --location --request POST 'https://sapi.ju.com/v4/order' 
+            curl --location --request POST 'https://sapi.ju.com/v1/spot/order' 
             --header 'accept: */*' 
             --header 'Content-Type: application/json' 
             --header 'validate-algorithms: HmacSHA256' 

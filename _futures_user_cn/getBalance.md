@@ -2,7 +2,7 @@
 title: 获取用户单币种资金
 position_number: 3
 type: get
-description: /future/user/v1/balance/detail
+description: /v1/future-u/user/balance/detail
 parameters:
     -
         name: coin
@@ -24,12 +24,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "availableBalance": 0,      //可用余额
             "coin": "",                 //币种
             "isolatedMargin": 0,        //逐仓保证金冻结
@@ -39,7 +39,7 @@ right_code_blocks:
             "coupon": 0,                //抵扣金余额
             "walletBalance": 0          //钱包余额
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

@@ -2,7 +2,7 @@
 title: 获取交易员详情
 position_number: 27
 type: get
-description: /future/copytrade/public/user/v1/public/copy-trade/leader-detail-v2 	
+description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-detail-v2 	
 parameters:
     -
        name: accountId
@@ -29,10 +29,10 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                    "returnCode": 0,
-                    "msgInfo": "success",
-                    "error": null,
-                    "result": {
+                    "code": 200,
+                    "msg": "success",
+                    "msgInfo": null,
+                    "data": {
                             "nickName": "string", // 名称
                             "avatar": "string", // 头像
                             "intro": "string", // 简介

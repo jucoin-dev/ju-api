@@ -2,7 +2,7 @@
 title: create a sub-account
 position_number: 2
 type: post
-description: /v4/user/account
+description: /api/user/account
 parameters:
     -
         name: accountName
@@ -30,12 +30,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": true  //true: success; false/null: unsuccess
+                  "data": true  //true: success; false/null: unsuccess
                 }
         title: Response
         language: json

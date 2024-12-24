@@ -2,7 +2,7 @@
 title: 修改持仓模式
 position_number: 17
 type: post
-description: /future/user/v1/position/change-type
+description: /v1/future-u/user/position/change-type
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -
@@ -39,13 +39,13 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+          "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {},
-          "returnCode": 0
+          "msg": "",
+          "data": {},
+          "code": 200
         }
       title: Response
       language: json

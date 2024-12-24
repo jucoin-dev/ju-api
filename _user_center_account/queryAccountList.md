@@ -2,7 +2,7 @@
 title: Query account list（applicable to  master and sub account）
 position_number: 1
 type: get
-description: /v4/user/account
+description: /api/user/account
 parameters:
     -
         name: accountId
@@ -43,12 +43,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": [
+                  "data": [
                     {
                         "id": "1352123154436",                     //account id
                         "accountName": "master1",                  //account name

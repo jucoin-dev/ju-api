@@ -6,7 +6,7 @@ parameters:
 content:
 content_markdown: >-
 
-    Example for http://fapi.ju.com/api/v1/public/symbol/detail?symbol=btc_usdt
+    Example for https://api.jcwork.net/v1/future-u/market/public/symbol/detail?symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000
     
     
     The following is an example of an order placed in a call interface using echo openssl and curl tools in a Linux bash environment. Appkey, secret for demonstration purposes only:
@@ -40,7 +40,7 @@ content_markdown: >-
       timeInForce: 'GTC',
       side: 'BUY',
       symbol: 'btc_usdt',
-      price: '39000',
+      price: '90000',
       quantity: '2'
     }
 
@@ -67,7 +67,7 @@ content_markdown: >-
 
       Example of Path:
 
-              /future/api/v1/public/symbol/detail
+              /v1/future-u/market/public/symbol/detail
 
               The above concatenated value is recorded as path
 
@@ -75,7 +75,7 @@ content_markdown: >-
 
       Example 1: All parameters sent via query string
 
-                symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=1&price=0.1
+                symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000
 
                 The above concatenate value is recorded as query
 
@@ -83,13 +83,13 @@ content_markdown: >-
 
       Request body string of json
       
-                symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=1&price=0.1
+                symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000
 
                 The above concatenate value is recorded as body
 
       Request body string of www-form-urlencoded
       
-                {"symbol" : "btc_usdt","side" : "BUY","type":"LIMIT","timeInForce":"GTC","quantity":2,"price":39000}
+                {"symbol" : "btc_usdt","side" : "BUY","type":"LIMIT","timeInForce":"GTC","quantity":2,"price":90000}
 
                 The above concatenate value is recorded as body
 
@@ -98,7 +98,7 @@ content_markdown: >-
       queryString: symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC
                 上述拼接值记作query
 
-      requestBody: {"quantity":2,"price":39000}
+      requestBody: {"quantity":2,"price":90000}
                 The above concatenate value is recorded as query
 
             The final concatenate value of the entire data is # concatenated with path, query, and body and form #path, #query, and #body. The finalconcatenate value is recorded asY=#path#query#body。

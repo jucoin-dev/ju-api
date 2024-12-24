@@ -2,7 +2,7 @@
 title: 获取持仓爆仓信息
 position_number: 18
 type: get
-description: /future/user/v1/position/break-list
+description: /v1/future-u/user/position/break-list
 parameters:
     -
         name: symbol
@@ -18,18 +18,18 @@ content_markdown: |-
                 200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/future/user/v1/position/break-list\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/v1/future-u/user/position/break-list\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
               "breakPrice": 0,    //爆仓价格,0代表不爆仓
               "calMarkPrice": 0,  //计算标记价格
@@ -43,7 +43,7 @@ right_code_blocks:
               "symbol": ""        //交易对
             }
           ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

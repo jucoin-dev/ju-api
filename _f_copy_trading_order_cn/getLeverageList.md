@@ -2,7 +2,7 @@
 title: 查看杠杆倍数
 position_number: 31
 type: get
-description: /future/copytrade/order/v1/position/list
+description: /v1/future-u/ct/position/list
 parameters:
     -
         name: symbol
@@ -36,10 +36,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": [
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": [
                                   {
                                     "symbol": "string", //市场
                                     "positionType": "string",//仓位类型:CROSSED(全仓);ISOLATED(逐仓)

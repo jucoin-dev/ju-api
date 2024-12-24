@@ -2,7 +2,7 @@
 title: 获取持仓信息
 position_number: 7
 type: get
-description: /future/user/v1/position/list
+description: /v1/future-u/user/position/list
 parameters:
     -
         name: symbol
@@ -24,12 +24,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
               "autoMargin": false, //是否自动追加保证金
               "availableCloseSize": 0, //可平仓数量（张）
@@ -45,7 +45,7 @@ right_code_blocks:
               "symbol": "" //交易对
             }
           ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

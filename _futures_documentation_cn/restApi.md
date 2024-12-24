@@ -8,11 +8,11 @@ parameters:
 content_markdown: |-
     正式:
 
-    **U本位合约:https://fapi.ju.com**
+    **U本位合约:https://api.jcwork.net/v1/future-u/**
     {: .info}
 
 
-    **币本位合约:https://dapi.ju.com**
+    **币本位合约:https://api.jcwork.net/v1/future-c/**
     {: .info}
 
 left_code_blocks:

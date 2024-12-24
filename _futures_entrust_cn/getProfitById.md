@@ -2,7 +2,7 @@
 title: 根据profitId查询止盈止损
 position_number: 11
 type: get
-description: /future/trade/v1/entrust/profit-detail
+description: /v1/future-u/trade/entrust/profit-detail
 parameters:
     -
         name: profitId
@@ -18,18 +18,18 @@ content_markdown: |-
                 200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/trade/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "createdTime": 0, //时间
             "entryPrice": 0, //开仓均价
             "executedQty": 0, //实际成交
@@ -43,7 +43,7 @@ right_code_blocks:
             "triggerProfitPrice": 0, //止盈价格
             "triggerStopPrice": 0 //止损价格
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

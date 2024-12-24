@@ -3,7 +3,7 @@ title: 获取交易对信息
 position_number: 3
 type: get
 split: '-------------------------------------'
-description: /v4/public/symbol
+description: /v1/spot/public/symbol
 parameters:
     -
         name: symbol
@@ -14,7 +14,9 @@ parameters:
         ranges:
     -
         name: symbols
-        type: string
+        type: array
+        items: 
+          type: string
         mandatory: false
         default:
         description: '交易对集合，优先级高于symbol。 eg: btc_usdt,eth_usdt'
@@ -27,6 +29,15 @@ parameters:
         description: |-
             版本号,当请求版本号与响应内容版本一致时，不返回清单，减少IO
             eg: 2e14d2cd5czcb2c2af2c1db65078d075
+        ranges:
+    -
+        name: tags
+        type: array
+        items:
+          type: string
+        mandatory: false
+        default: []
+        description: 
         ranges:
 content_markdown: >-
     #### **限流规则**
@@ -232,17 +243,20 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": {
                     "time": 1662444177871,                          //时间
                     "version": "7cd2cfab0dc979339f1de904bd90c9cb",  //内容版本
                     "symbols": [                                    //交易对清单
                       {
                         "id": 614,                                  //ID
                         "symbol": "btc_usdt",                       //交易对
+                        "displayName": "string",                    //展示名称
+                        "type": "string",                       
                         "state": "ONLINE",                          //交易对状态[ONLINE=上线的;OFFLINE=下线的,DELISTED=退市]
+                        "stateTime": null,                          //状态时间
                         "tradingEnabled": true,                     //启用交易
                         "openapiEnabled": true,                     //启用OPENAPI
                         "nextStateTime": null,                      //下一个状态时间
@@ -251,13 +265,12 @@ right_code_blocks:
                         "baseCurrency": "btc",                      //标的资产
                         "baseCurrencyPrecision": 5,                 //标的资产精度
                         "baseCurrencyId": 2,                        //标的资产ID
+                        "baseCurrencyLogo": "string",               //标的资产LOGO
                         "quoteCurrency": "usdt",                    //报价资产
                         "quoteCurrencyPrecision": 6,                //报价资产精度
                         "quoteCurrencyId": 11,                      //报价资产ID
                         "pricePrecision": 4,                        //交易价格精度
                         "quantityPrecision": 6,                     //交易数量精度
-                        "takerFeeRate": 0.001,                      //吃单手续费率
-                        "makerFeeRate": 0.002,                      //挂单手续费率
                         "orderTypes": [                             //订单类型[LIMIT=限价单;MARKET=市价单]
                           "LIMIT",
                           "MARKET"

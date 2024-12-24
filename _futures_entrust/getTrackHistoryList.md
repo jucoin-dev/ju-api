@@ -2,7 +2,7 @@
 title: Get history track list(inactive)
 position_number: 19
 type: get
-description: /future/trade/v1/entrust/track-list-history
+description: /v1/future-u/trade/entrust/track-list-history
 parameters:
     -
         name: direction
@@ -60,18 +60,18 @@ content_markdown: |-
                200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getTrackDetail() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/entrust/track-list-history\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getTrackDetail() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/trade/entrust/track-list-history\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             hasNext: true,               //Is there a next page
             hasPre: true,                //Is there a previous page
             items:[
@@ -97,7 +97,7 @@ right_code_blocks:
               "updatedTime": 0           //Update time
             ]
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

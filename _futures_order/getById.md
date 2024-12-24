@@ -2,7 +2,7 @@
 title: See Orders by ID
 position_number: 4
 type: get
-description: /future/trade/v1/order/detail
+description: /v1/future-u/trade/order/detail
 parameters:
   - name: orderId
     type: integer
@@ -16,18 +16,18 @@ content_markdown: |-
 
                200/s/apikey
 left_code_blocks:
-  - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+  - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/trade/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
     title: Java
     language: java
 right_code_blocks:
   - code_block: |-
       {
-        "error": {
+        "msgInfo": {
           "code": "",
           "msg": ""
         },
-        "msgInfo": "",
-        "result": {
+        "msg": "",
+        "data": {
           "avgPrice": 0, //Average price
           "closePosition": false, //Whether to close all when order condition is triggered
           "closeProfit": 0, //Offset profit and loss
@@ -48,7 +48,7 @@ right_code_blocks:
           "triggerProfitPrice": 0, //TP trigger price
           "triggerStopPrice": 0 //SL trigger price
         },
-        "returnCode": 0
+        "code": 200
       }
     title: Response
     language: json

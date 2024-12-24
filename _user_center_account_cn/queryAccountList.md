@@ -2,7 +2,7 @@
 title: 查询账户列表（适用于主账户和子账户）
 position_number: 1
 type: get
-description: /v4/user/account
+description: /api/user/account
 parameters:
     -
         name: accountId
@@ -43,12 +43,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": [
+                  "data": [
                     {
                         "id": "1352123154436",                     //账户id
                         "accountName": "master1",                  //账户名

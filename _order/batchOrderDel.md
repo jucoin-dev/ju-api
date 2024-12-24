@@ -3,7 +3,7 @@ title: Cancell batch order
 position_number: 7
 type: delete
 split: -------------------------------------
-description: /v4/batch-order
+description: /v1/spot/batch-order
 parameters:
     -
         name: clientBatchId
@@ -39,12 +39,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {}
+                  "data": {}
                 }
         title: Response
         language: json

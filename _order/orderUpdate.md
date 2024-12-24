@@ -2,7 +2,7 @@
 title: Update Order(Limit)
 position_number: 5
 type: put
-description: /v4/order/{orderId}
+description: /v1/spot/order/{orderId}
 parameters:
     -
         name: orderId
@@ -25,7 +25,14 @@ parameters:
         default:
         description: Quantity
         ranges:
-          
+    -
+        name: clientOrderId
+        type: string
+        mandatory: false
+        default:
+        description: client Order Id
+        ranges: 
+               
 content_markdown: >-
   
     #### **Limit Flow Rules**
@@ -49,14 +56,15 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "orderId": "6216559590087220004",   //order id
-                    "modifyId": "407329711723834560"    //modify id
+                    "modifyId": "407329711723834560",    //modify id
+                    "clientModifyId": "string"
                   }
                 }
         title: Response

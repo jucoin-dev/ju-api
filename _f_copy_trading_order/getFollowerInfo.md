@@ -2,7 +2,7 @@
 title: Get follower info
 position_number: 28
 type: get
-description: /future/copytrade/user/v1/copy-trade/leader-relation 	
+description: /v1/future-u/ct/copy-trade/leader-relation 	
 parameters:
     -
        name: leaderAccountId
@@ -29,10 +29,10 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                    "returnCode": 0,
-                    "msgInfo": "success",
-                    "error": null,
-                    "result": {
+                    "code": 200,
+                    "msg": "success",
+                    "msgInfo": null,
+                    "data": {
                             "leaderAccountId": 0, // leader accountId
                             "symbols": "string", // symbol
                             "followLoss": 0, // follow loss

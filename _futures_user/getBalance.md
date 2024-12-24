@@ -2,7 +2,7 @@
 title: Get User's Single Currency Fund Information
 position_number: 3
 type: get
-description: /future/user/v1/balance/detail
+description: /v1/future-u/user/balance/detail
 parameters:
     -
         name: coin
@@ -24,12 +24,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "availableBalance": 0,      //Available balance
             "coin": "",                 //Currency
             "isolatedMargin": 0,        //Frozen isolated margin
@@ -39,7 +39,7 @@ right_code_blocks:
             "coupon": 0,                //Coupon
             "walletBalance": 0          //Balance
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

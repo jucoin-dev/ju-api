@@ -2,7 +2,7 @@
 title: 子账户业务系统间划转
 position_number: 2
 type: post
-description: /v4/balance/account/transfer
+description: /v1/spot/balance/account/transfer
 parameters:
     -
         name: bizId
@@ -47,6 +47,20 @@ parameters:
         description: 划转的数量
         ranges:
     -
+        name: remark
+        type: string
+        mandatory: false
+        default:
+        description: max 256
+        ranges:
+    -
+        name: toRemark
+        type: string
+        mandatory: false
+        default:
+        description: max 100
+        ranges:
+    -
         name: toAccountId
         type: long
         mandatory: true
@@ -59,7 +73,14 @@ parameters:
         mandatory: false
         default:
         description: 划出账户id
-        ranges: 
+        ranges:
+    -
+        name: nftId
+        type: string
+        mandatory: false
+        default:
+        description: ntf ID
+        ranges:
 content_markdown: >-
 
 
@@ -80,10 +101,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": 123456 //返回的划转唯一id 建议存储用来对账
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": 123456 //返回的划转唯一id 建议存储用来对账
                 }
         title: Response
         language: json

@@ -3,7 +3,7 @@ title: Query historical transaction list
 position_number: 7
 split: -------------------------------------
 type: get
-description: /v4/public/trade/history
+description: /v1/spot/public/trade/history
 parameters:
     -
         name: symbol
@@ -21,7 +21,7 @@ parameters:
         ranges: 1，1000
     -
         name: direction
-        type: string
+        type: enum
         mandatory: true
         default:
         description: 'query direction'
@@ -55,12 +55,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": [
+                  "data": [
                     {
                       "i": 0,           //ID
                       "t": 0,           //transaction time

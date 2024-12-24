@@ -2,7 +2,7 @@
 title: Query trade
 position_number: 1
 type: get
-description: /v4/trade
+description: /v1/spot/trade
 parameters:
     -
         name: symbol
@@ -13,21 +13,21 @@ parameters:
         ranges:
     -
         name: bizType
-        type: string
+        type: enum
         mandatory: false
         default:
         description: "SPOT, LEVER"
         ranges:
     -
         name: orderSide
-        type: string
+        type: enum
         mandatory: false
         default:
         description: BUY,SELL
         ranges:
     -
         name: orderType
-        type: string
+        type: enum
         mandatory: false
         default:
         description: LIMIT, MARKET
@@ -48,7 +48,7 @@ parameters:
         ranges:
     -
         name: direction
-        type: string
+        type: enum
         mandatory: false
         default:
         description: query direction:PREV, NEXT
@@ -58,7 +58,7 @@ parameters:
         type: number
         mandatory: false
         default: '20'
-        description: Limit number, max 100
+        description: Limit number, max 100,min 1
         ranges:
     -
         name: startTime
@@ -88,12 +88,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "hasPrev": true,
                     "hasNext": true,
                     "items": [
@@ -112,6 +112,8 @@ right_code_blocks:
                         "quoteCurrency": "USDT",  
                         "fee": "0.5",   
                         "feeCurrency": "USDT", 
+                        "nftId": "000012313",               //nftId
+                        "symbolType": "nft",               
                         "takerMaker": "taker"  //takerMaker
                       }
                     ]

@@ -2,7 +2,7 @@
 title: 查询单个跟踪委托
 position_number: 15
 type: get
-description: /future/trade/v1/entrust/track-detail
+description: /v1/future-u/trade/entrust/track-detail
 parameters:
     -
         name: trackId
@@ -18,18 +18,18 @@ content_markdown: |-
                200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getTrackDetail() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/entrust/track-detail\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getTrackDetail() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/trade/entrust/track-detail\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "activationPrice": 0,      //激活价格，如果没有配置，则用当前价格为激活价格
             "avgPrice": 0,             //实际成交均价
             "callback": "",            //回调幅度配置 1比例 2固定
@@ -51,7 +51,7 @@ right_code_blocks:
             "triggerPriceType": "",    //触发价格类型
             "updatedTime": 0           //更新时间
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

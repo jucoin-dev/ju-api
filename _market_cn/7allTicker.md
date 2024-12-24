@@ -2,7 +2,7 @@
 title: 完整ticker
 position_number: 8
 type: get
-description: /v4/public/ticker
+description: /v1/spot/public/ticker
 parameters:
     -
         name: symbol
@@ -20,7 +20,7 @@ parameters:
         ranges:
     -
         name: tags
-        type: string
+        type: array
         mandatory: false
         default:
         description: '标签集合,逗号分割，当前仅支持 spot'
@@ -52,10 +52,10 @@ right_code_blocks:
     -
         code_block: |-
             {
-                "rc": 0,
-                "mc": "SUCCESS",
-                "ma": [],
-                "result": [
+                "code": 200,
+                "msg": "SUCCESS",
+                "msgInfo": [],
+                "data": [
                       {
                         "s": "btc_usdt",        //交易对(symbol)
                         "t": 1662444879425,     //更新时间(time)

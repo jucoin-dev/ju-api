@@ -2,7 +2,7 @@
 title: Get ListenKey
 position_number: 1.1
 type: get
-description: /future/user/v1/user/listen-key
+description: /v1/future-u/user/user/listen-key
 
 content_markdown: |-
               Note:Valid time is 8 hours
@@ -17,13 +17,13 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+          "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {},
-          "returnCode": 0
+          "msg": "",
+          "data": {},
+          "code": 200
         }
       title: Response
       language: json

@@ -2,7 +2,7 @@
 title: Get Account Related Information
 position_number: 1
 type: get
-description: /future/user/v1/account/info
+description: /v1/future-u/user/account/info
 content_markdown: |-
 
                 #### **Limit Flow Rules**
@@ -16,12 +16,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "accountId": 0, //Account ID
             "allowOpenPosition": false, //Is it possible to open position
             "allowTrade": false, //Is it possible to trade
@@ -30,7 +30,7 @@ right_code_blocks:
             "state": 0, //User status
             "userId": 0 //User ID
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

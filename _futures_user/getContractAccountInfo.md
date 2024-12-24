@@ -2,7 +2,7 @@
 title: Get contract account assets
 position_number: 1
 type: get
-description: /future/user/v1/compat/balance/list
+description: /v1/future-u/user/compat/balance/list
 parameters:
   -
     name: queryAccountId
@@ -24,12 +24,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
                 "accountId": 500000000000, // account id
                 "userId": 500000000000, // user id
@@ -49,7 +49,7 @@ right_code_blocks:
                 "coupon": "0" // Deduction
             }
          ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

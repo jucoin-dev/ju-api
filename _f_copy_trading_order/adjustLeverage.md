@@ -2,7 +2,7 @@
 title: adjust leverage
 position_number: 32
 type: post
-description: /future/copytrade/order/v1/position/adjust-leverage
+description: /v1/future-u/trade/position/adjust-leverage
 parameters:
     -
         name: symbol
@@ -43,10 +43,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": Boolean //true=success false=fail
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": Boolean //true=success false=fail
                         }
         title: Response
         language: json

@@ -2,7 +2,7 @@
 title: Public get leader day income
 position_number: 23
 type: get
-description: /future/copytrade/public/user/v1/public/copy-trade/leader-day-income
+description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-day-income
 parameters:
    -
         name: accountId
@@ -36,10 +36,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": [
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": [
                                 {
                                 "amount": 0, // amount
                                 "time": 0 // time

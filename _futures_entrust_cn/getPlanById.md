@@ -2,7 +2,7 @@
 title: 根据entrustId查询计划委托
 position_number: 5
 type: get
-description: /future/trade/v1/entrust/plan-detail
+description: /v1/future-u/trade/entrust/plan-detail
 parameters:
     -
         name: entrustId
@@ -17,18 +17,18 @@ content_markdown: |-
                 200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/trade/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "closePosition": false, //是否触发全平
             "createdTime": 0, //创建时间
             "entrustId": 0, //委托id
@@ -45,7 +45,7 @@ right_code_blocks:
             "timeInForce": "", //有效方式
             "triggerPriceType": "" //触发价格类型
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

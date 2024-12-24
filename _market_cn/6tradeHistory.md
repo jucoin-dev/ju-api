@@ -3,7 +3,7 @@ title: 查询历史成交列表
 position_number: 7
 split: -------------------------------------
 type: get
-description: /v4/public/trade/history
+description: /v1/spot/public/trade/history
 parameters:
     -
         name: symbol
@@ -21,7 +21,7 @@ parameters:
         ranges: 1，1000
     -
         name: direction
-        type: string
+        type: enum
         mandatory: true
         default:
         description: '查询方向'
@@ -55,12 +55,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": [
+                  "data": [
                     {
                       "i": 0,           //ID
                       "t": 0,           //成交时间(time)

@@ -3,7 +3,7 @@ title: Get a list of currency assets
 position_number: 3
 type: get
 split: -------------------------------------
-description: /v4/balances
+description: /v1/spot/balances
 parameters:
     -
         name: currencies
@@ -11,6 +11,20 @@ parameters:
         mandatory: false
         default:
         description: 'List of currencies, comma separated,eg:  usdt,btc'
+        ranges:
+    -
+        name: queryAccountId
+        type: long
+        mandatory: false
+        default:
+        description: 
+        ranges:
+    -
+        name: filterIsDisplayFalse
+        type: boolean
+        mandatory: false
+        default: true
+        description:
         ranges:
 content_markdown: >-
     #### **Limit Flow Rules**
@@ -29,21 +43,28 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "totalBtcAmount": 0,
+                    "totalUsdtAmount": 0,
                     "assets": [    
                       {        
                         "currency": "string",
                         "currencyId": 0,
-                        "frozenAmount": 0,
+                        "frozenAmount": 0,      
+                        "freeze": 0,            
+                        "lock": 0,              
+                        "copyTrade": 0,         
+                        "trade": 0,            
+                        "withdraw": 0,         
                         "availableAmount": 0,
                         "totalAmount": 0,
-                        "convertBtcAmount": 0
+                        "convertBtcAmount": 0,
+                        "convertUsdtAmount": 0   
                       }
                     ]
                   }

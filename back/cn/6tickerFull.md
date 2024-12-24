@@ -2,7 +2,7 @@
 title: 获取完整ticker
 position_number: 8
 type: get
-description: /v4/public/ticker/full
+description: /v1/spot/public/ticker
 parameters:
     -
         name: symbol
@@ -17,6 +17,13 @@ parameters:
         mandatory: false
         default:
         description: '交易对集合，优先级高于symbol。 eg: btc_usdt,eth_usdt'
+        ranges:
+    -
+        name: tags
+        type: array
+        mandatory: false
+        default:
+        description: '标签集合'
         ranges:
 content_markdown:
 left_code_blocks:
@@ -34,7 +41,30 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": [\r\n    {\r\n      \"s\": \"btc_usdt\",     //交易对(symbol)\r\n      \"t\": 1661856036925,  //时间(time)\r\n      \"cv\": \"0.0000\",      //价格变动(change value)\r\n      \"cr\": \"0.00\",        //价格变动百分比(change rate)\r\n      \"o\": \"9000.0000\",    //最早一笔(open)\r\n      \"l\": \"9000.0000\",    //最低(low)\r\n      \"h\": \"9000.0000\",    //最高(high)\r\n      \"c\": \"9000.0000\",    //最后一笔(close)\r\n      \"q\": \"0.0136\",       //成交量(quantity)\r\n      \"v\": \"122.9940\",     //成交额(volume)\r\n      \"ap\": null,          //asks price(卖一价)\r\n      \"aq\": null,          //asks qty(卖一量)\r\n      \"bp\": null,           //bids price(买一价)\r\n      \"bq\": null           //bids qty(买一量)\r\n    }\r\n  ]\r\n}"
+        code_block: |-
+                {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": [
+                    {
+                      "s": "btc_usdt",        //交易对(symbol)
+                      "t": 1662444879425,     //更新时间(time)
+                      "cv": "0.00",           //价格变动(change value)
+                      "cr": "0.0000",         //价格变动百分比(change rate)
+                      "o": "200.00",          //最早一笔(open)
+                      "l": "200.00",          //最低(low)
+                      "h": "200.00",          //最高(high)
+                      "c": "200.00",          //最后一笔(close)
+                      "q": "0.002",           //成交量(quantity)
+                      "v": "0.40",            //成交额(volume)
+                      "ap": null,             //asks price(卖一价)
+                      "aq": null,             //asks qty(卖一量)
+                      "bp": null,             //bids price(买一价)
+                      "bq": null              //bids qty(买一量)
+                    }
+                  ]
+                }
         title: Response
         language: json
 ---

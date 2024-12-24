@@ -2,7 +2,7 @@
 title: 查询用户apiKey（适用于主账户和子账户）
 position_number: 1
 type: get
-description: /v4/user/account/api-key
+description: /api/user/account/api-key
 parameters:
     -
         name: userAccountId
@@ -43,12 +43,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": [
+                  "data": [
                     {
                         "id": 1,                     
                         "userAccountId": "1352123154435",                         //账户id

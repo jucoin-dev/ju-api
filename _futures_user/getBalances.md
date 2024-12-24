@@ -2,7 +2,7 @@
 title: Get User's Funds Information
 position_number: 4
 type: get
-description: /future/user/v1/balance/list
+description: /v1/future-u/user/balance/list
 content_markdown: |-
 
               #### **Limit Flow Rules**
@@ -16,12 +16,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
               "availableBalance": 0,      //Available balance
               "coin": "",                 //Currency
@@ -33,7 +33,7 @@ right_code_blocks:
               "walletBalance": 0          //Balance
             }
           ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

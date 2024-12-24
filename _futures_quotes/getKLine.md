@@ -2,7 +2,7 @@
 title: Get Trading Pair Information of Kline
 position_number: 15
 type: get
-description: /future/market/v1/public/q/kline
+description: /v1/future-u/market/public/q/kline
 parameters:
     -
         name: symbol
@@ -48,12 +48,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
               "a": 0, //Volume
               "c": 0, //Close price
@@ -65,7 +65,7 @@ right_code_blocks:
               "v": 0 //Turnover
             }
           ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

@@ -3,7 +3,7 @@ title: 获取深度数据
 position_number: 4
 type: get
 split: -------------------------------------
-description: /v4/public/depth
+description: /v1/spot/public/depth
 parameters:
     -
         name: symbol
@@ -16,13 +16,13 @@ parameters:
         name: limit
         type: number
         mandatory: false
-        default: '100'
-        description: 数量，最小查询100条
-        ranges: 1~500
+        default: '50'
+        description: 数量
+        ranges: 1~1000
 content_markdown: >-
     #### **限流规则**
 
-    10/s/ip
+    1/s/ip
 
 
 
@@ -43,10 +43,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": {
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": {
                     "timestamp": 1662445330524,          //时间戳
                     "lastUpdateId": 137333589606963580,  //最后更新记录
                     "bids": [                            //买盘([?][0]=价位;[?][1]=挂单量)

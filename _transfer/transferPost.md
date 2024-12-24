@@ -2,7 +2,7 @@
 title: Transfer between user business systems
 position_number: 1
 type: post
-description: /v4/balance/transfer
+description: /v1/spot/balance/transfer
 parameters:
     -
         name: bizId
@@ -46,7 +46,21 @@ parameters:
         default:
         description: Transfer amount
         ranges:
-
+    -
+        name: remark
+        type: string
+        mandatory: false
+        default:
+        description: max 256
+        ranges:
+    -
+        name: toRemark
+        type: string
+        mandatory: false
+        default:
+        description: max 100
+        ranges:
+        
 content_markdown: >-
 
 
@@ -67,10 +81,10 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "SUCCESS",
-                  "ma": [],
-                  "result": 123456 //The returned unique id of the transfer, it is recommended to store it for reconciliation
+                  "code": 200,
+                  "msg": "SUCCESS",
+                  "msgInfo": [],
+                  "data": 123456 //The returned unique id of the transfer, it is recommended to store it for reconciliation
                 }
         title: Response
         language: json

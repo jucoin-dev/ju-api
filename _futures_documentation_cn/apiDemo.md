@@ -12,7 +12,7 @@ content_markdown: >-
 
     各个语言的sdk：
         
-        java: https://github.com/ju-com/xt4-java-demo
+        java: https://github.com/ju.com/ju-java-demo
 
 
 left_code_blocks:

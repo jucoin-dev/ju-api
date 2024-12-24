@@ -3,7 +3,7 @@ title: Get K-line data
 position_number: 5
 type: get
 split: -------------------------------------
-description: /v4/public/kline
+description: /v1/spot/public/kline
 parameters:
     -
         name: symbol
@@ -60,12 +60,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": [
+                  "data": [
                     {
                       "t": 1662601014832,   //open time
                       "o": "30000",         //open price

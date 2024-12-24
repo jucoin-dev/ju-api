@@ -2,7 +2,7 @@
 title: 批量下单
 position_number: 5
 type: post
-description: /v4/batch-order
+description: /v1/spot/batch-order
 parameters:
     -
         name: clientBatchId
@@ -34,28 +34,28 @@ parameters:
         ranges:
     -
         name: item.side
-        type: string
+        type: enum
         mandatory: true
         default:
         description: 订单方向 BUY-买,SELL-卖
         ranges:
     -
         name: item.type
-        type: string
+        type: enum
         mandatory: true
         default:
         description: '订单类型  LIMIT-限价,MARKET-市价 '
         ranges:
     -
         name: item.timeInForce
-        type: string
+        type: enum
         mandatory: true
         default:
         description: 有效方式  GTC,IOC,FOK,GTX
         ranges:
     -
         name: item.bizType
-        type: string
+        type: enum
         mandatory: true
         default:
         description: >-
@@ -81,6 +81,27 @@ parameters:
         mandatory: false
         default:
         description: 金额。现价不填；市价按金额下单时必填
+        ranges:
+    -
+        name: item.media
+        type: string
+        mandatory: false
+        default:
+        escription: media
+        ranges:
+    -
+        name: item.mediaChannel
+        type: string
+        mandatory: false
+        default:
+        escription: mediaChannel
+        ranges:
+    -
+        name: item.nftId
+        type: string
+        mandatory: false
+        default:
+        escription: nft id
         ranges:
 content_markdown: >-
     #### **限流规则**
@@ -124,19 +145,19 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": {
+                  "data": {
                     "batchId": "123",                       // 批次号 
                     "items": [                              //订单集合
                       {
                         "index": "0",                       // 下标，从0开始 
                         "clientOrderId": "123",             // 客户端订单ID 
                         "orderId": "123",                   // 订单ID 
-                        "reject": "false",                  // 是否拒单 
+                        "reject": false,                  // 是否拒单 
                         "reason": "invalid price precision" // 拒单原因 
                       }
                     ]

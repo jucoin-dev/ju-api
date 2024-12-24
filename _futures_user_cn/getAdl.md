@@ -2,7 +2,7 @@
 title: 获取ADL信息
 position_number: 13
 type: get
-description: /future/user/v1/position/adl
+description: /v1/future-u/user/position/adl
 content_markdown: |-
 
                 #### **限流规则**
@@ -16,19 +16,19 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
               "longQuantile": 0, //多头adl
               "shortQuantile": 0, //空头adl
               "symbol": "" //交易对
             }
           ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

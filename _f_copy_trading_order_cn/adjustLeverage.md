@@ -2,7 +2,7 @@
 title: 调整杠杆倍数
 position_number: 32
 type: post
-description: /future/copytrade/order/v1/position/adjust-leverage
+description: /v1/future-u/trade/position/adjust-leverage
 parameters:
     -
         name: symbol
@@ -43,10 +43,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": Boolean //true成功 false失败
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": Boolean //true成功 false失败
                         }
         title: Response
         language: json

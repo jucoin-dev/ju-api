@@ -2,7 +2,7 @@
 title: Get User's Account Flow Information
 position_number: 5
 type: get
-description: /future/user/v1/balance/bills
+description: /v1/future-u/user/balance/bills
 parameters:
     -
         name: symbol
@@ -59,12 +59,12 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "hasNext": false, //Is there a next page
             "hasPrev": false, //Is there a previous page
             "items": [ //Datasheets
@@ -80,7 +80,7 @@ right_code_blocks:
               }
             ]
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

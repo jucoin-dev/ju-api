@@ -2,7 +2,7 @@
 title: Query historical orders
 position_number: 10
 type: get
-description: /v4/history-order
+description: /v1/spot/history-order
 parameters:
     -
         name: symbol
@@ -13,28 +13,28 @@ parameters:
         ranges:
     -
         name: bizType
-        type: string
+        type: enum
         mandatory: false
         default:
         description: "SPOT, LEVER"
         ranges:
     -
         name: side
-        type: string
+        type: enum
         mandatory: false
         default:
         description: BUY,SELL
         ranges:
     -
         name: type
-        type: string
+        type: enum
         mandatory: false
         default:
         description: LIMIT, MARKET
         ranges:
     -
         name: state
-        type: string
+        type: enum
         mandatory: false
         default:
         description: order <a href="#orderStatus">state</a>, <br> PARTIALLY_FILLED,<br> FILLED,   CANCELED,<br> REJECTED,EXPIRED
@@ -48,7 +48,7 @@ parameters:
         ranges:
     -
         name: direction
-        type: string
+        type: enum
         mandatory: false
         default:
         description: query direction:PREV, NEXT
@@ -58,7 +58,7 @@ parameters:
         type: number
         mandatory: false
         default: '20'
-        description: Limit number, max 100
+        description: Limit number,min 1, max 100
         ranges:
     -
         name: startTime
@@ -98,12 +98,12 @@ right_code_blocks:
     -
         code_block: |-
             {
-              "rc": 0,
-              "mc": "string",
-              "ma": [
+              "code": 200,
+              "msg": "string",
+              "msgInfo": [
                 {}
               ],
-              "result": {
+              "data": {
                 "hasPrev": true,
                 "hasNext": true,
                 "items": [   //For field information, refer to the Get single interface
@@ -127,6 +127,8 @@ right_code_blocks:
                     "fee": "string",
                     "feeCurrency": "string",
                     "state": "NEW",
+                    "nftId": "string",
+                    "symbolType": "string",
                     "deductServices":[{   //Fee deduction list (if set JU deduction fee and the deduction occurs, use this field to represent the trade fee. Otherwise, use the original fee and feeCurrency fields to represent the trade fee). 
                                           "fee":"0.1",     
                                           "feeCurrency":"ju"
@@ -135,6 +137,7 @@ right_code_blocks:
                                           "fee":"0.001",
                                           "feeCurrency":"btc"
                                       }],
+                    "closed": true,
                     "time": 1655958915583,
                     "ip": "127.0.0.1",
                     "updatedTime": 1655958915583

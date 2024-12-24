@@ -2,7 +2,7 @@
 title: 查询当前挂单
 position_number: 8
 type: get
-description: /v4/open-order
+description: /v1/spot/open-order
 parameters:
     -
         name: symbol
@@ -13,7 +13,7 @@ parameters:
         ranges:
     -
         name: bizType
-        type: string
+        type: enum
         mandatory: false
         default:
         description: >-
@@ -21,7 +21,7 @@ parameters:
         ranges:
     -
         name: side
-        type: string
+        type: enum
         mandatory: false
         default:
         description: BUY-买,SELL-卖
@@ -43,12 +43,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": [      //字段信息参考单笔订单获取接口
+                  "data": [      //字段信息参考单笔订单获取接口
                     {
                       "symbol": "BTC_USDT",
                       "orderId": "6216559590087220004",
@@ -68,6 +68,8 @@ right_code_blocks:
                       "avgPrice": "42350",
                       "fee": "string",
                       "feeCurrency": "string",
+                      "nftId": "string",
+                      "symbolType": "string",          
                       "state": "NEW",
                       "deductServices":[{   //手续费抵扣列表（如果设置手续费抵扣并产生抵扣，使用该字段代表手续费，没有抵扣使用原有fee、feeCurrency字段代表手续费）
                                             "fee":"0.1",     
@@ -77,6 +79,7 @@ right_code_blocks:
                                             "fee":"0.001",
                                             "feeCurrency":"btc"
                                         }],
+                      "closed": true,
                       "time": 1655958915583,
                       "ip": "127.0.0.1",
                       "updatedTime": 1655958915583

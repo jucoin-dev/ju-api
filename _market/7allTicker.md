@@ -2,7 +2,7 @@
 title: Full ticker
 position_number: 8
 type: get
-description: /v4/public/ticker
+description: /v1/spot/public/ticker
 parameters:
     -
         name: symbol
@@ -20,7 +20,7 @@ parameters:
         ranges:
     -
         name: tags
-        type: string
+        type: array
         mandatory: false
         default:
         description: 'Set of tags, separated by commas, currently only supports spot'
@@ -52,10 +52,10 @@ right_code_blocks:
     -
         code_block: |-
             {
-                "rc": 0,
-                "mc": "SUCCESS",
-                "ma": [],
-                "result": [
+                "code": 200,
+                "msg": "SUCCESS",
+                "msgInfo": [],
+                "data": [
                       {
                         "s": "btc_usdt",        //symbol
                         "t": 1662444879425,     //update time

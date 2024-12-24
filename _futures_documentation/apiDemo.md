@@ -12,7 +12,7 @@ content_markdown: >-
 
     Sdks for each language:
         
-        java: https://github.com/ju-com/ju-java-demo
+        java: https://github.com/ju.com/ju-java-demo
 
 left_code_blocks:
 - code_block:

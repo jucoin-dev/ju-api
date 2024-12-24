@@ -2,7 +2,7 @@
 title: Query the list of recent transactions
 position_number: 6
 type: get
-description: /v4/public/trade/recent
+description: /v1/spot/public/trade/recent
 parameters:
     -
         name: symbol
@@ -40,12 +40,12 @@ right_code_blocks:
     -
         code_block: |-
                 {
-                  "rc": 0,
-                  "mc": "string",
-                  "ma": [
+                  "code": 200,
+                  "msg": "string",
+                  "msgInfo": [
                     {}
                   ],
-                  "result": [
+                  "data": [
                     {
                       "i": 0,           //ID
                       "t": 0,           //transaction time

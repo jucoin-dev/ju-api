@@ -2,7 +2,7 @@
 title: 获取用户阶梯费率
 position_number: 8
 type: get
-description: /future/user/v1/user/step-rate
+description: /v1/future-u/user/user/step-rate
 parameters:
     -
 content_markdown: |-
@@ -12,22 +12,22 @@ content_markdown: |-
                200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getStepRate() {\r\n\tString text = HttpUtil.get(URL + \"/future/user/v1/user/step-rate\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getStepRate() {\r\n\tString text = HttpUtil.get(URL + \"/v1/future-u/user/user/step-rate\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+          "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "success",
-          "result": {
+          "msg": "success",
+          "data": {
             "makerFee":"0.00004",
             "takerFee": "0.00001"
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

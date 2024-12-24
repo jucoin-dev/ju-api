@@ -8,11 +8,11 @@ parameters:
 content_markdown: |-
     Official:
 
-    **USDT-M:https://fapi.ju.com**
+    **USDT-M:https://api.jcwork.net/v1/future-u/**
     {: .info}
 
 
-    **Coin-M:https://dapi.ju.com**
+    **Coin-M:https://api.jcwork.net/v1/future-c/**
     {: .info}
 
 left_code_blocks:

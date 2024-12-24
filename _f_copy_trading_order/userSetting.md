@@ -2,7 +2,7 @@
 title: Get user setting
 position_number: 9
 type: get
-description: /future/copytrade/user/v1/copy-trade/user-settings
+description: /v1/future-u/ct/copy-trade/user-settings
 parameters:
 
 content_markdown: >-
@@ -22,10 +22,10 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                    "returnCode": 0,
-                    "msgInfo": "success",
-                    "error": null,
-                    "result": {
+                    "code": 200,
+                    "msg": "success",
+                    "msgInfo": null,
+                    "data": {
                             "id": 0, // id
                             "intro": "string", // intro
                             "followCapitalMin": 0, // margin

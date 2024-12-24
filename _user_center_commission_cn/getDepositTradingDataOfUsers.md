@@ -2,7 +2,7 @@
 title: 查询该用户充值及交易数据
 position_number: 2
 type: get
-description: /v4/referal/invite/user/data
+description: /api/referal/invite/user/data
 parameters:
   -
     name: startTime
@@ -44,10 +44,10 @@ right_code_blocks:
   -
     code_block: |-
       {
-        "ma": [],
-        "mc": "SUCCESS",
-        "rc": 0,
-        "result": {
+        "msgInfo": [],
+        "msg": "SUCCESS",
+        "code": 200,
+        "data": {
           "userId": 123456789,                //用户id
           "role": "PARTNER",                  //用户角色
           "deposit": true,                    //是否充值

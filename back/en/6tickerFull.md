@@ -2,7 +2,7 @@
 title: Get complete ticker
 position_number: 6
 type: get
-description: /v4/public/ticker/full
+description: /v1/spot/public/ticker
 parameters:
     -
         name: symbol
@@ -17,6 +17,13 @@ parameters:
         mandatory: false
         default:
         description: 'Collection of trading pairs. Priority is higher than symbol. eg: btc_usdt,eth_usdt'
+        ranges:
+    -
+        name: tags
+        type: array
+        mandatory: false
+        default:
+        description: '标签集合'
         ranges:
 content_markdown:
 left_code_blocks:
@@ -34,7 +41,30 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"rc\": 0,\r\n  \"mc\": \"SUCCESS\",\r\n  \"ma\": [],\r\n  \"result\": [\r\n    {\r\n      \"s\": \"btc_usdt\",     //symbol\r\n      \"t\": 1661856036925,  //time\r\n      \"cv\": \"0.0000\",      //change value\r\n      \"cr\": \"0.00\",        //change rate\r\n      \"o\": \"9000.0000\",    //open price\r\n      \"l\": \"9000.0000\",    //low\r\n      \"h\": \"9000.0000\",    //high\r\n      \"c\": \"9000.0000\",    //close price\r\n      \"q\": \"0.0136\",       //quantity\r\n      \"v\": \"122.9940\",     //volume\r\n      \"ap\": null,          //asks price(sell one price)\r\n      \"aq\": null,          //asks qty(sell one quantity)\r\n      \"bp\": null,           //bids price(buy one price)\r\n      \"bq\": null           //bids qty(buy one quantity)\r\n    }\r\n  ]\r\n}"
+        code_block: |-
+          {
+            "code": 200,
+            "msg": "SUCCESS",
+            "msgInfo": [],
+            "data": [
+              {
+                "s": "btc_usdt",        //symbol
+                "t": 1662444879425,     //time
+                "cv": "0.00",           //change value
+                "cr": "0.0000",         //change rate
+                "o": "200.00",          //open
+                "l": "200.00",          //low
+                "h": "200.00",          //high
+                "c": "200.00",          //close
+                "q": "0.002",           //quantity
+                "v": "0.40",            //volume
+                "ap": null,             //asks price
+                "aq": null,             //asks qty
+                "bp": null,             //bids price
+                "bq": null              //bids qty
+              }
+            ]
+          }
         title: Response
         language: json
 ---

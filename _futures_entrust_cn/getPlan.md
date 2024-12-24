@@ -2,7 +2,7 @@
 title: 查询计划委托
 position_number: 4
 type: get
-description: /future/trade/v1/entrust/plan-list
+description: /v1/future-u/trade/entrust/plan-list
 parameters:
     -
         name: symbol
@@ -56,18 +56,18 @@ content_markdown: |-
                 200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/trade/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "items": [
               {
                 "clientOrderId": "", //自定义订单id
@@ -92,7 +92,7 @@ right_code_blocks:
             "ps": 0,
             "total": 0
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

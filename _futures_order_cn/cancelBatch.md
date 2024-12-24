@@ -2,7 +2,7 @@
 title: 撤销所有订单
 position_number: 7
 type: post
-description: /future/trade/v1/order/cancel-all
+description: /v1/future-u/trade/order/cancel-all
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
   - name: symbol
@@ -19,13 +19,13 @@ content_markdown: |-
 right_code_blocks:
   - code_block: |-
       {
-        "error": {
+        "msgInfo": {
           "code": "",
           "msg": ""
         },
-        "msgInfo": "",
-        "result": true,
-        "returnCode": 0
+        "msg": "",
+        "data": true,
+        "code": 200
       }
     title: Response
     language: json

@@ -12,13 +12,13 @@ content_markdown: >-
 
     各个语言的sdk：
         
-        java : https://github.com/ju-com/ju-java-demo
-        golang : https://github.com/ju-com/ju-go-demo
-        c# : https://github.com/ju-com/ju-c--demo
+        java : https://github.com/ju.com/ju-java-demo
+        golang : https://github.com/ju.com/ju-go-demo
+        c# : https://github.com/ju.com/ju-c--demo
     
     各个接口的请求信息样例
         
-        https://github.com/ju-com/ju-request-demo/blob/master/request-ju.txt
+        https://github.com/ju.com/ju-request-demo/blob/master/request-ju.txt
 
 
 left_code_blocks:

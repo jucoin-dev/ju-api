@@ -8,7 +8,7 @@ content_markdown: >-
 
   用于 JU.COM 的 HTTP API 的官方 Python3 Package :
 
-      https://pypi.org/project/pyju/
+      https://pypi.org/project/
 
 left_code_blocks:
 - code_block:

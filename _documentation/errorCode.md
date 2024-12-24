@@ -15,13 +15,13 @@ content_markdown: |-
     | 503 | Service unavailable, please try again later |
     
 
-    | rc | return Code |
+    | code | return Code |
     | --- | --- |
     | 0 | business success |
     | 1 | business failure |
     
     
-    | mc | message code |
+    | msg | message code |
     | --- | --- |
     | SUCCESS | success |
     | FAILURE | fail |

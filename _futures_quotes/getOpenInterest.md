@@ -2,7 +2,7 @@
 title: Get the open position of a trading pair
 position_number: 21
 type: get
-description: /future/market/v1/public/contract/open-interest
+description: /v1/future-u/market/public/contract/open-interest
 parameters:
     -
         name: symbol
@@ -21,24 +21,24 @@ content_markdown: >-
   
 left_code_blocks:
     -
-        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/market/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "symbol": "", //Trading pair
             "openInterest": "", //open position
             "openInterestUsd": 0, //open value
             "time": "", //time
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

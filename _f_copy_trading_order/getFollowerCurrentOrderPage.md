@@ -2,7 +2,7 @@
 title: Get follower current order page
 position_number: 13
 type: get
-description: /future/copytrade/order/v1/copy-trade/follower-order-page
+description: /v1/future-u/ct/copy-trade/follower-order-page
 parameters:
     -
         name: type
@@ -56,10 +56,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": [
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": [
                                     {
                                     "symbolName": "string", // symbol
                                     "positionType": "string", // position type:CROSSED;ISOLATED

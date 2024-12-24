@@ -2,11 +2,11 @@
 title: Get batch
 position_number: 4
 type: get
-description: /v4/batch-order
+description: /v1/spot/batch-order
 parameters:
     -
         name: orderIds
-        type: string
+        type: long
         mandatory: true
         default:
         description: 'order Ids eg:  6216559590087220004, <br>6216559590087220004'
@@ -29,12 +29,12 @@ right_code_blocks:
     -
         code_block: |-
                     {
-                      "rc": 0,
-                      "mc": "string",
-                      "ma": [
+                      "code": 200,
+                      "msg": "string",
+                      "msgInfo": [
                         {}
                       ],
-                      "result": [
+                      "data": [
                         {
                           "symbol": "BTC_USDT",
                           "orderId": "6216559590087220004",
@@ -54,6 +54,8 @@ right_code_blocks:
                           "avgPrice": "42350",
                           "fee": "string",
                           "feeCurrency": "string",
+                          "nftId": "string",
+                          "symbolType": "string",
                           "state": "NEW",
                           "deductServices":[{   //Fee deduction list (if set JU deduction fee and the deduction occurs, use this field to represent the trade fee. Otherwise, use the original fee and feeCurrency fields to represent the trade fee). 
                                                 "fee":"0.1",     
@@ -63,6 +65,7 @@ right_code_blocks:
                                                 "fee":"0.001",
                                                 "feeCurrency":"btc"
                                             }],
+                          "closed": true,
                           "time": 1655958915583,
                           "ip": "127.0.0.1",
                           "updatedTime": 1655958915583

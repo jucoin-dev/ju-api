@@ -2,7 +2,7 @@
 title: 获取交易员的跟单人信息
 position_number: 28
 type: get
-description: /future/copytrade/public/user/v1/public/copy-trade/leader-follower-page
+description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-follower-page
 parameters:
     -
         name: type
@@ -64,10 +64,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": [
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": [
                                 {
                                 "accountId": 0, // 跟单员帐号id
                                 "followerName": "string", // 跟随用户昵称

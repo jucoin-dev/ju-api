@@ -2,7 +2,7 @@
 title: See Trigger Orders History
 position_number: 6
 type: get
-description: /future/trade/v1/entrust/plan-list-history
+description: /v1/future-u/trade/entrust/plan-list-history
 parameters:
     -
         name: symbol
@@ -53,18 +53,18 @@ content_markdown: |-
                  200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/trade/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": {
+          "msg": "",
+          "data": {
             "hasNext": false, //Is there a next page
             "hasPrev": false, //Is there a previous page
             "items": [ //Datasheets
@@ -88,7 +88,7 @@ right_code_blocks:
               }
             ]
           },
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

@@ -8,7 +8,7 @@ content_markdown: >-
   
     Official Python3 API connector for JU.COM's HTTP APIs :
         
-        https://pypi.org/project/pyju/
+        https://pypi.org/project/
 
 left_code_blocks:
 - code_block:

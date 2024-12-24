@@ -2,7 +2,7 @@
 title: Public get leader's prefer
 position_number: 26
 type: get
-description: /future/copytrade/public/user/v1/public/copy-trade/leader-symbol-prefer
+description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-symbol-prefer
 parameters:
    -
         name: accountId
@@ -36,10 +36,10 @@ right_code_blocks:
     -
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result":{
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data":{
                                 "index": 0, // 
                                 "symbol": "string", // symbol
                                 "count": 0, // count

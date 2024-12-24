@@ -2,7 +2,7 @@
 title: Get Aggregated Market Information for Specific Trading Pair
 position_number: 16
 type: get
-description: /future/market/v1/public/q/agg-ticker
+description: /v1/future-u/market/public/q/agg-ticker
 parameters:
     -
         name: symbol
@@ -14,18 +14,18 @@ parameters:
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:
     -
-        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/future-u/market/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
   - code_block: |-
       {
-        "error": {
+        "msgInfo": {
           "code": "",
           "msg": ""
         },
-        "msgInfo": "",
-        "result": {
+        "msg": "",
+        "data": {
           "a": "", //24h volume
           "ap": "", //ask price
           "bp": "", //bid price
@@ -40,7 +40,7 @@ right_code_blocks:
           "t": 0, //Time
           "v": "" //24h Turnover
         },
-        "returnCode": 0
+        "code": 200
       }
     title: Response
     language: json

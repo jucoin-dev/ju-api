@@ -2,7 +2,7 @@
 title: Get ADL Information
 position_number: 13
 type: get
-description: /future/user/v1/position/adl
+description: /v1/future-u/user/position/adl
 content_markdown: |-
 
                #### **Limit Flow Rules**
@@ -16,19 +16,19 @@ left_code_blocks:
 right_code_blocks:
     - code_block: |-
         {
-          "error": {
+         "msgInfo": {
             "code": "",
             "msg": ""
           },
-          "msgInfo": "",
-          "result": [
+          "msg": "",
+          "data": [
             {
               "longQuantile": 0, //long position adl
               "shortQuantile": 0, //Short position adl
               "symbol": "" //Trading pair
             }
           ],
-          "returnCode": 0
+          "code": 200
         }
       title: Response
       language: json

@@ -2,7 +2,7 @@
 title: 带单/跟单一键平仓
 position_number: 11
 type: post
-description: /future/copytrade/order/v1/copy-trade/close-all  	
+description: /v1/future-u/ct/copy-trade/close-all  	
 parameters:
     -
         name: symbol
@@ -35,10 +35,10 @@ right_code_blocks:
     - 
         code_block: |-
                         {
-                        "returnCode": 0,
-                        "msgInfo": "success",
-                        "error": null,
-                        "result": Boolean //true成功 false失败
+                        "code": 200,
+                        "msg": "success",
+                        "msgInfo": null,
+                        "data": Boolean //true成功 false失败
                         }
         title: Response
         language: json
