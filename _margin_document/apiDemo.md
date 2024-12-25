@@ -12,13 +12,11 @@ content_markdown: >-
 
     Sdks for each language:
         
-        java : https://github.com/ju.com/ju-java-demo
-        golang : https://github.com/ju.com/ju-go-demo
-        c# : https://github.com/ju.com/ju-c--demo
+        java : https://github.com/jucoin-dev/ju-java-demo
 
     Sample request information for each interface：
         
-        https://github.com/ju.com/ju-request-demo/blob/master/request-ju.txt
+        https://github.com/jucoin-dev/ju-request-demo/blob/master/request-ju.txt
 
 
 left_code_blocks:

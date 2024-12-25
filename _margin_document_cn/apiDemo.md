@@ -22,7 +22,7 @@
 [//]: # (    各个语言的sdk：)
 
 [//]: # (        )
-[//]: # (        java : https://github.com/ju.com/ju-java-demo)
+[//]: # (        java : https://github.com/jucoin-dev/ju-java-demo)
 
 [//]: # (        golang : https://github.com/ju.com/ju-go-demo)
 

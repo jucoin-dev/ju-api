@@ -18,7 +18,7 @@ content_markdown: >-
 
   #### Java libraries
 
-  A lightweight Java code library: [Java SDK](https://github.com/ju.com/ju-java-demo)
+  A lightweight Java code library: [Java SDK](https://github.com/jucoin-dev/ju-java-demo)
 
   #### JavaScript SDK
 
