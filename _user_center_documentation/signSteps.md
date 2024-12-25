@@ -153,7 +153,7 @@ content_markdown: >-
 
         sample request message:
   
-            curl --location --request POST 'https://sapi.ju.com/v1/spot/order' 
+            curl --location --request POST 'https://api.ju.com/v1/spot/order' 
             --header 'accept: */*' 
             --header 'Content-Type: application/json' 
             --header 'validate-algorithms: HmacSHA256' 

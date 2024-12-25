@@ -14,9 +14,9 @@ content_markdown: >-
         
         java : https://github.com/jucoin-dev/ju-java-demo
     
-    各个接口的请求信息样例
-        
-        https://github.com/jucoin-dev/ju-request-demo/blob/master/request-ju.txt
+#    各个接口的请求信息样例
+#        
+#        https://github.com/jucoin-dev/ju-request-demo/blob/master/request-ju.txt
 
 
 left_code_blocks:

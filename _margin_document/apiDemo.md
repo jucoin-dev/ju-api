@@ -13,10 +13,10 @@ content_markdown: >-
     Sdks for each language:
         
         java : https://github.com/jucoin-dev/ju-java-demo
-
-    Sample request information for each interface：
-        
-        https://github.com/jucoin-dev/ju-request-demo/blob/master/request-ju.txt
+#
+#    Sample request information for each interface：
+#        
+#        https://github.com/jucoin-dev/ju-request-demo/blob/master/request-ju.txt
 
 
 left_code_blocks:

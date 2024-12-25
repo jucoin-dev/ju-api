@@ -1,31 +1,26 @@
 ---
-title: API code library
+title: API 代码库
 position_number: 7
 parameters:
-- name:
+  - name:
 content:
 content_markdown: >-
   Java connector
 
 
-  A lightweight Java codebase that provides methods that allow users to directly call the API。 
+  一个轻量级的Java代码库，提供让用户直接调用API的方法。 
 
-    Sdks for each language:
-        
+    各个语言的sdk：
+
         java : https://github.com/jucoin-dev/ju-java-demo
 
 
-    Sample request information for each interface：
-        
-        https://github.com/jucoin-dev/ju-request-demo/blob/master/request-ju.txt
-
-
 left_code_blocks:
-- code_block:
-  title:
-  language:
+  - code_block:
+    title:
+    language:
 right_code_blocks:
-- code_block:
-  title:
-  language:
+  - code_block:
+    title:
+    language:
 ---
