@@ -6,7 +6,7 @@ parameters:
 content:
 content_markdown: >-
 
-    Take https://api.ju.com/v1/spot/order as an example.
+    Take https://api.jucoin.io/v1/spot/order as an example.
     
     
     The following is an example appkey and secret for placing an order using a call interface implemented by echo openssl and curl tools in the linux bash environment for demonstration purposes only:
@@ -153,7 +153,7 @@ content_markdown: >-
 
         sample request message:
   
-            curl --location --request POST 'https://api.ju.com/v1/spot/order' 
+            curl --location --request POST 'https://api.jucoin.io/v1/spot/order' 
             --header 'accept: */*' 
             --header 'Content-Type: application/json' 
             --header 'validate-algorithms: HmacSHA256' 
