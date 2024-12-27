@@ -41,8 +41,8 @@ right_code_blocks:
                     "withdraw": 0,          
                     "availableAmount": 0,  
                     "totalAmount": 0,    
-                    "convertBtcAmount": 0,   //折算BTC数量
-                    "convertUsdtAmount": 0   //折算USDT数量
+                    "convertBtcAmount": 0,   //Converted BTC amount
+                    "convertUsdtAmount": 0   //Converted USDT amount
                   }
                 }
         title: Response
