@@ -7,9 +7,10 @@ parameters:
         content:
 content_markdown: |-
 
-    **production environment: https://api.jucoin.io**
+    **production environment: https://api.jucoin.com**
     {: .info}
-
+        https://api.jucoin.io(backup 1)
+        https://api.jucoin.live(backup 2)
 
 left_code_blocks:
     -

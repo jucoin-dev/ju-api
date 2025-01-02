@@ -7,8 +7,10 @@ parameters:
         content:
 content_markdown: |-
 
-    **生产环境: https://api.jucoin.io**
+    **生产环境: https://api.jucoin.com(主)**
     {: .info}
+        https://api.jucoin.io(备用1)
+        https://api.jucoin.live(备用2)
 
 
 left_code_blocks:
