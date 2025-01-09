@@ -28,7 +28,7 @@ right_code_blocks:
         code_block: |-
                 {
                     "code": 200,
-                    "mc": "SUCCESS",
+                    "msg": "SUCCESS",
                     "msgInfo": [],
                     "data": {
                         "accessToken": "xxxxxx",

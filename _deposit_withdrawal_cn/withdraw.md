@@ -74,7 +74,7 @@ right_code_blocks:
         code_block: |-
                 {
                     "code": 200,
-                    "mc": "SUCCESS",
+                    "msg": "SUCCESS",
                     "msgInfo": [],
                     "data": {      
                         "id": 100    //Long  提现记录id，用于后期查询提现历史记录

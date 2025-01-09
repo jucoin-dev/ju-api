@@ -23,7 +23,7 @@ right_code_blocks:
         code_block: |-
                 {
                   "code": 200,
-                  "mc": "SUCCESS",
+                  "msg": "SUCCESS",
                   "msgInfo": [],
                   "data": [{
                       symbolId: 1,       //市场id
