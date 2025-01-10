@@ -2,7 +2,7 @@
 title: Get active position information
 position_number: 7
 type: get
-description: /v1/future-u/user/position
+description: /trade/position
 parameters:
   -
     name: symbol

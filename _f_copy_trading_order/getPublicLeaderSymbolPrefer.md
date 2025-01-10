@@ -2,7 +2,7 @@
 title: Public get leader's prefer
 position_number: 26
 type: get
-description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-symbol-prefer
+description: /ct/public/user/v1/public/copy-trade/leader-symbol-prefer
 parameters:
    -
         name: accountId

@@ -15,7 +15,7 @@ parameters:
 content_markdown: >-
     #### **基地址**
 
-    ##### **wss://fstream.ju.com/ws/market**
+    ##### **wss://fws.ju.com/ws/market**
 
 
     ---

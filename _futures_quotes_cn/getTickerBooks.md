@@ -2,7 +2,7 @@
 title: 获取全交易对的买一卖一行情信息
 position_number: 19
 type: get
-description: /v1/future-u/market/public/q/ticker/books
+description: /market/public/q/ticker/books
 parameters:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:

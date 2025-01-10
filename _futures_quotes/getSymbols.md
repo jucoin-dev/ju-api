@@ -2,7 +2,7 @@
 title: Get Configuration Information for Listed And Tradeable Symbols
 position_number: 4
 type: get
-description: /v1/future-u/market/v3/public/symbol/list
+description: /market/v3/public/symbol/list
 parameters:
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:

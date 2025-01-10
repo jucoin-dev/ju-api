@@ -2,7 +2,7 @@
 title: 调整杠杆倍数
 position_number: 9
 type: post
-description: /v1/future-u/trade/position/adjust-leverage
+description: /trade/position/adjust-leverage
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -

@@ -2,7 +2,7 @@
 title: Get history track list(inactive)
 position_number: 19
 type: get
-description: /v1/future-u/trade/entrust/track-list-history
+description: /trade/entrust/track-list-history
 parameters:
     -
         name: direction

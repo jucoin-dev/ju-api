@@ -2,7 +2,7 @@
 title: 获取交易员收益率图表
 position_number: 24
 type: get
-description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-day-income-rate
+description: /ct/public/user/v1/public/copy-trade/leader-day-income-rate
 parameters:
    -
         name: accountId

@@ -2,7 +2,7 @@
 title: Update Orders
 position_number: 2
 type: post
-description: /v1/future-u/trade/order/update
+description: /trade/order/update
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -

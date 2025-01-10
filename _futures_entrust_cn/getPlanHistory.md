@@ -2,7 +2,7 @@
 title: 查询历史计划委托
 position_number: 6
 type: get
-description: /v1/future-u/trade/entrust/plan-list-history
+description: /trade/entrust/plan-list-history
 parameters:
     -
         name: symbol

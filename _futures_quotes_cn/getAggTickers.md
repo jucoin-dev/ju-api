@@ -2,7 +2,7 @@
 title: 获取全交易对的聚合行情信息
 position_number: 17
 type: get
-description: /v1/future-u/market/public/q/agg-tickers
+description: /market/public/q/agg-tickers
 parameters:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:

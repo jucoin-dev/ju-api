@@ -2,7 +2,7 @@
 title: 带单/跟单一键平仓
 position_number: 11
 type: post
-description: /v1/future-u/ct/copy-trade/close-all  	
+description: /ct/copy-trade/close-all  	
 parameters:
     -
         name: symbol

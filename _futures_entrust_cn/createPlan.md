@@ -2,7 +2,7 @@
 title: 创建计划委托
 position_number: 1
 type: post
-description: /v1/future-u/trade/entrust/create-plan
+description: /trade/entrust/create-plan
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -

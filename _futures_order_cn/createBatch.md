@@ -2,7 +2,7 @@
 title: 批量下单
 position_number: 3
 type: post
-description: /v1/future-u/trade/order/create-batch
+description: /trade/order/create-batch
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
   - name: list

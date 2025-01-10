@@ -2,7 +2,7 @@
 title: 获取用户阶梯费率
 position_number: 8
 type: get
-description: /v1/future-u/user/user/step-rate
+description: /user/step-rate
 parameters:
     -
 content_markdown: |-

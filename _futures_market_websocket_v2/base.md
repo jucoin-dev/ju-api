@@ -15,7 +15,7 @@ parameters:
 content_markdown: >-
     #### **Base Address**
 
-    ##### **wss://fstream.ju.com/ws/market**
+    ##### **wss://fws.ju.com/ws/market**
 
 
     ---

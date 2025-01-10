@@ -2,7 +2,7 @@
 title: 获取交易员收益额图表
 position_number: 23
 type: get
-description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-day-income
+description: /ct/public/user/v1/public/copy-trade/leader-day-income
 parameters:
    -
         name: accountId

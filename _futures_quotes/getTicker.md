@@ -2,7 +2,7 @@
 title: Get Market Information for Specific Trading Pair
 position_number: 7
 type: get
-description: /v1/future-u/market/public/q/ticker
+description: /market/public/q/ticker
 parameters:
     -
         name: symbol

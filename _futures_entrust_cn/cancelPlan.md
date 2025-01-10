@@ -2,7 +2,7 @@
 title: 撤销计划委托
 position_number: 2
 type: post
-description: /v1/future-u/trade/entrust/cancel-plan
+description: /trade/entrust/cancel-plan
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -

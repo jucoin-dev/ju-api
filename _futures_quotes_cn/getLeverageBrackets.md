@@ -2,7 +2,7 @@
 title: 查询所有交易对杠杆分层
 position_number: 6
 type: get
-description: /v1/future-u/market/public/leverage/bracket/list
+description: /market/public/leverage/bracket/list
 parameters:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:

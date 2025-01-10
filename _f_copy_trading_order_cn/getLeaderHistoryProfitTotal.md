@@ -2,7 +2,7 @@
 title: 获取带单员历史分润汇总
 position_number: 4
 type: get
-description: /v1/future-u/ct/copy-trade/my-profit-history
+description: /ct/copy-trade/my-profit-history
 parameters:
     -
         name: direction

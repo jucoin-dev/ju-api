@@ -17,13 +17,13 @@ content_markdown: |-
         **如何正确在本地维护一个orderbook副本**
         
 
-        1.订阅 wss://fstream.ju.com/ws/market，depth_update@btc_usdt
+        1.订阅 wss://fws.ju.com/ws/market，depth_update@btc_usdt
 
 
         2.开始缓存收到的更新。同一个价位，后收到的更新覆盖前面的。
 
 
-        3.访问Rest接口 https://api.jcwork.net/v1/future-u/market/public/q/depth?symbol=btc_usdt&level=500 获得一个500档的深度快照
+        3.访问Rest接口 https://api.jucoin.com/v1/future-u/market/public/q/depth?symbol=btc_usdt&level=500 获得一个500档的深度快照
 
 
         4.将目前缓存到的信息中u <= 步骤3中获取到的快照中的lastUpdateId的部分丢弃(丢弃更早的信息，已经过期)。

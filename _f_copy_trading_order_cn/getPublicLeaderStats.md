@@ -2,7 +2,7 @@
 title: 获取交易员带单情况
 position_number: 25
 type: get
-description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-stats
+description: /ct/public/user/v1/public/copy-trade/leader-stats
 parameters:
    -
         name: accountId

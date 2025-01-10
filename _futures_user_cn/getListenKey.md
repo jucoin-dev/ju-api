@@ -2,7 +2,7 @@
 title: 获取listenKey
 position_number: 1.1
 type: get
-description: /v1/future-u/user/user/listen-key
+description: /user/listen-key
 content_markdown: |-
              注：**有效时间为8小时**
              #### **限流规则**

@@ -2,7 +2,7 @@
 title: 查询历史跟踪委托（非活跃）
 position_number: 19
 type: get
-description: /v1/future-u/trade/entrust/track-list-history
+description: /trade/entrust/track-list-history
 parameters:
     -
         name: direction

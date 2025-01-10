@@ -2,7 +2,7 @@
 title: 查询单个跟踪委托
 position_number: 15
 type: get
-description: /v1/future-u/trade/entrust/track-detail
+description: /trade/entrust/track-detail
 parameters:
     -
         name: trackId

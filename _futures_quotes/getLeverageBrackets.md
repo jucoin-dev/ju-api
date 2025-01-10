@@ -2,7 +2,7 @@
 title: See Leverage Stratification of All Trading Pairs
 position_number: 6
 type: get
-description: /v1/future-u/market/public/leverage/bracket/list
+description: /market/public/leverage/bracket/list
 parameters:
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:

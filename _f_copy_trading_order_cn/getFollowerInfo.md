@@ -2,7 +2,7 @@
 title: 获取跟单员信息
 position_number: 28
 type: get
-description: /v1/future-u/ct/copy-trade/leader-relation 	
+description: /ct/copy-trade/leader-relation 	
 parameters:
     -
        name: leaderAccountId

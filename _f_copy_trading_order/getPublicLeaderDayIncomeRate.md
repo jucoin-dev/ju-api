@@ -2,7 +2,7 @@
 title: Public get leader day income rate
 position_number: 24
 type: get
-description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-day-income-rate
+description: /ct/public/user/v1/public/copy-trade/leader-day-income-rate
 parameters:
    -
         name: accountId

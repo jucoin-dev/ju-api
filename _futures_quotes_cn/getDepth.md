@@ -2,7 +2,7 @@
 title: 获取交易对的深度信息
 position_number: 10
 type: get
-description: /v1/future-u/market/public/q/depth
+description: /market/public/q/depth
 parameters:
     -
         name: symbol

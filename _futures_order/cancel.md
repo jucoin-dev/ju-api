@@ -2,7 +2,7 @@
 title: Cancel Orders
 position_number: 6
 type: post
-description: /v1/future-u/trade/order/cancel
+description: /trade/order/cancel
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
   - name: orderId

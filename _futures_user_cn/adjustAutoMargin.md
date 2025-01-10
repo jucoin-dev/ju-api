@@ -3,7 +3,7 @@ title: 修改自动追加保证金
 position_number: 11
 type: post
 display: 0
-description: /v1/future-u/user/position/auto-margin
+description: /trade/position/auto-margin
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -

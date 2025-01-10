@@ -2,7 +2,7 @@
 title: 下单
 position_number: 1
 type: post
-description: /v1/future-u/trade/order/create
+description: /trade/order/create
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -

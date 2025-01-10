@@ -2,7 +2,7 @@
 title: 获取持仓爆仓信息
 position_number: 18
 type: get
-description: /v1/future-u/user/position/break-list
+description: /trade/position/break-list
 parameters:
     -
         name: symbol

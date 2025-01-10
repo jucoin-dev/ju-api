@@ -2,7 +2,7 @@
 title: Get my current leaders
 position_number: 17
 type: get
-description: /v1/future-u/ct/copy-trade/my-follow-list
+description: /ct/copy-trade/my-follow-list
 parameters:
     
 content_markdown: >-

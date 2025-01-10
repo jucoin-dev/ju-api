@@ -2,7 +2,7 @@
 title: Get Mark Price for Single Trading Pair
 position_number: 13
 type: get
-description: /v1/future-u/market/public/q/symbol-mark-price
+description: /market/public/q/symbol-mark-price
 parameters:
     -
         name: symbol

@@ -2,7 +2,7 @@
 title: Get track list(all active)
 position_number: 16
 type: get
-description: /v1/future-u/trade/entrust/track-list
+description: /trade/entrust/track-list
 parameters:
     - 
         name: page

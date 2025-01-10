@@ -2,7 +2,7 @@
 title: 获取交易员/跟单员设置信息
 position_number: 9
 type: get
-description: /v1/future-u/ct/copy-trade/user-settings
+description: /ct/copy-trade/user-settings
 parameters:
 
 content_markdown: >-

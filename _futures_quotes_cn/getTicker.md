@@ -2,7 +2,7 @@
 title: 获取指定交易对的行情信息
 position_number: 7
 type: get
-description: /v1/future-u/market/public/q/ticker
+description: /market/public/q/ticker
 parameters:
     -
         name: symbol

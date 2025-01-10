@@ -2,7 +2,7 @@
 title: 获取单个交易对的配置信息
 position_number: 3
 type: get
-description: /v1/future-u/market/public/symbol/detail
+description: /market/public/symbol/detail
 parameters:
     -
         name: symbol

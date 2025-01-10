@@ -2,7 +2,7 @@
 title: 开通合约
 position_number: 2
 type: post
-description: /v1/future-u/user/account/open
+description: /user/account/open
 content_markdown: |-
 
                  #### **限流规则**

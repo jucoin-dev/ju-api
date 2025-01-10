@@ -2,7 +2,7 @@
 title: 获取带单员历史带单
 position_number: 2
 type: get
-description: /v1/future-u/ct/copy-trade/leader-order-history
+description: /ct/copy-trade/leader-order-history
 parameters:
     -
         name: type

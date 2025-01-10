@@ -2,7 +2,7 @@
 title: Get client ip
 position_number: 1
 type: get
-description: /future/public/client
+description: /public/client
 parameters:
     -
         name:

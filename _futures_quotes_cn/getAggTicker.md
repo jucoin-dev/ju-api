@@ -2,7 +2,7 @@
 title: 获取指定交易对的聚合行情信息
 position_number: 16
 type: get
-description: /v1/future-u/market/public/q/agg-ticker
+description: /market/public/q/agg-ticker
 parameters:
     -
         name: symbol

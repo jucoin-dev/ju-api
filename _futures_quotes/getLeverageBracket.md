@@ -2,7 +2,7 @@
 title: See Leverage Stratification of Single Trading Pair
 position_number: 5
 type: get
-description: /v1/future-u/market/public/leverage/bracket/detail
+description: /market/public/leverage/bracket/detail
 parameters:
     -
         name: symbol

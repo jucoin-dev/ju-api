@@ -2,7 +2,7 @@
 title: 获取交易对开仓量
 position_number: 21
 type: get
-description: /v1/future-u/market/public/contract/open-interest
+description: /market/public/contract/open-interest
 parameters:
     -
         name: symbol

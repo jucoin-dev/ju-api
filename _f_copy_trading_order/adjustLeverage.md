@@ -2,7 +2,7 @@
 title: adjust leverage
 position_number: 32
 type: post
-description: /v1/future-u/trade/position/adjust-leverage
+description: /trade/position/adjust-leverage
 parameters:
     -
         name: symbol

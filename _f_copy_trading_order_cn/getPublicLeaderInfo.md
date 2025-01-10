@@ -2,7 +2,7 @@
 title: 获取交易员详情
 position_number: 27
 type: get
-description: /v1/future-u/ct/public/user/v1/public/copy-trade/leader-detail-v2 	
+description: /ct/public/user/v1/public/copy-trade/leader-detail-v2 	
 parameters:
     -
        name: accountId

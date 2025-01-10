@@ -2,7 +2,7 @@
 title: Get Futures Info
 position_number: 1
 type: get
-description: /future/market/v1/public/cg/contracts
+description: /market/v1/public/cg/contracts
 remark: Content-Type = application/x-www-form-urlencoded
 parameters:
     -

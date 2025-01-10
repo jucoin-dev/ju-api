@@ -2,7 +2,7 @@
 title: 查询计划委托
 position_number: 4
 type: get
-description: /v1/future-u/trade/entrust/plan-list
+description: /trade/entrust/plan-list
 parameters:
     -
         name: symbol

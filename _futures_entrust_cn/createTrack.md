@@ -2,7 +2,7 @@
 title: 创建跟踪委托
 position_number: 13
 type: post
-description: /v1/future-u/trade/entrust/create-track
+description: /trade/entrust/create-track
 remark: Content-Type = application/x-www-form-urlencoded
 parameters:
     -

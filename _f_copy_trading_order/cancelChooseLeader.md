@@ -2,7 +2,7 @@
 title: Cancel follow leader
 position_number: 16
 type: post
-description: /v1/future-u/ct/copy-trade/cancel-choose-leader
+description: /ct/copy-trade/cancel-choose-leader
 parameters:
     -
         name: leaderAccountId

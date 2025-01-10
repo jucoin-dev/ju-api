@@ -2,7 +2,7 @@
 title: 获取当前跟单
 position_number: 13
 type: get
-description: /v1/future-u/ct/copy-trade/follower-order-list
+description: /ct/copy-trade/follower-order-list
 parameters:
     -
         name: type

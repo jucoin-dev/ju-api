@@ -6,7 +6,7 @@ parameters:
 content:
 content_markdown: >-
 
-    Example for https://api.jcwork.net/v1/future-u/market/public/symbol/detail?symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000
+    Example for https://api.jucoin.com/v1/future-u/market/public/symbol/detail?symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000
     
     
     The following is an example of an order placed in a call interface using echo openssl and curl tools in a Linux bash environment. Appkey, secret for demonstration purposes only:

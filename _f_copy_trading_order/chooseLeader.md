@@ -2,7 +2,7 @@
 title: Choose leader
 position_number: 15
 type: post
-description: /v1/future-u/ct/copy-trade/choose-leader
+description: /ct/copy-trade/choose-leader
 parameters:
     -
         name: leaderAccountId

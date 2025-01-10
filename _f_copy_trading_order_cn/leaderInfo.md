@@ -2,7 +2,7 @@
 title: 带单员信息
 position_number: 7
 type: get
-description: /v1/future-u/ct/copy-trade/leader-detail
+description: /ct/copy-trade/leader-detail
 parameters:
 
 content_markdown: >-

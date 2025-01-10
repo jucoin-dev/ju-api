@@ -2,7 +2,7 @@
 title: Get Market Information for All Trading Pairs
 position_number: 8
 type: get
-description: /v1/future-u/market/public/q/tickers
+description: /market/public/q/tickers
 parameters:
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:

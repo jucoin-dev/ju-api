@@ -2,7 +2,7 @@
 title: 获取用户资金
 position_number: 4
 type: get
-description: /v1/future-u/user/balance/list
+description: /user/balance/list
 
 content_markdown: |-
 

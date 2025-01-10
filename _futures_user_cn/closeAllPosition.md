@@ -2,7 +2,7 @@
 title: 一键平仓
 position_number: 12
 type: post
-description: /v1/future-u/user/position/close-all
+description: /trade/position/close-all
 content_markdown: |-
 
                #### **限流规则**

@@ -2,7 +2,7 @@
 title: Get leader future profit total
 position_number: 6
 type: get
-description: /v1/future-u/ct/copy-trade/my-profit-future-total
+description: /ct/copy-trade/my-profit-future-total
 parameters:
 
 content_markdown: >-

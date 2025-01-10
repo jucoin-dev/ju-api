@@ -2,7 +2,7 @@
 title: 获取当前带单
 position_number: 1
 type: get
-description: /v1/future-u/ct/copy-trade/leader-order-list
+description: /ct/copy-trade/leader-order-list
 parameters:
     -
         name: type

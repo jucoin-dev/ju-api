@@ -14,11 +14,11 @@ parameters:
 content_markdown: |-
     正式:
 
-    wss://fstream.ju.com
+    wss://fws.ju.com
     
-    行情ws订阅地址:  wss://fstream.ju.com/ws/market
+    行情ws订阅地址:  wss://fws.ju.com/ws/market
     
-    用户ws订阅地址:  wss://fstream.ju.com/ws/user
+    用户ws订阅地址:  wss://fws.ju.com/ws/user
 
 left_code_blocks:
 -

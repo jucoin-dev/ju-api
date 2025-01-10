@@ -2,7 +2,7 @@
 title: Cancel leader
 position_number: 8
 type: get
-description: /v1/future-u/ct/copy-trade/cancel-leader
+description: /ct/copy-trade/cancel-leader
 parameters:
 
 content_markdown: >-

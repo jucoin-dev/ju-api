@@ -2,7 +2,7 @@
 title: Cancel all track
 position_number: 17
 type: post
-description: /v1/future-u/trade/entrust/cancel-all-track
+description: /trade/entrust/cancel-all-track
 remark: Content-Type = application/x-www-form-urlencoded
 parameters:
   

@@ -2,7 +2,7 @@
 title: See Trigger Orders base on EntrustId
 position_number: 5
 type: get
-description: /v1/future-u/trade/entrust/plan-detail
+description: /trade/entrust/plan-detail
 parameters:
     -
         name: entrustId

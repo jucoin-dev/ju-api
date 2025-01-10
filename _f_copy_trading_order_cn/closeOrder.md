@@ -2,7 +2,7 @@
 title: 带单/跟单平仓
 position_number: 12
 type: post
-description: /v1/future-u/ct/copy-trade/close  	
+description: /ct/copy-trade/close  	
 parameters:
     -
         name: trackNo

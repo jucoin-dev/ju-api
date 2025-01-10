@@ -6,7 +6,7 @@ parameters:
 content:
 content_markdown: >-
 
-    https://api.jcwork.net/v1/future-u/market/public/symbol/detail?symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000的示例
+    https://api.jucoin.com/v1/future-u/market/public/symbol/detail?symbol=btc_usdt&side=BUY&type=LIMIT&timeInForce=GTC&quantity=2&price=90000的示例
     
     
     以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例 appkey、secret仅供示范：

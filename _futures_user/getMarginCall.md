@@ -2,7 +2,7 @@
 title: Get Margin Call Information
 position_number: 18
 type: get
-description: /v1/future-u/user/position/break-list
+description: /trade/position/break-list
 parameters:
     -
         name: symbol
@@ -18,7 +18,7 @@ content_markdown: |-
                200/s/apikey
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/v1/future-u/user/position/break-list\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/v1/future-u/trade/position/break-list\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:

@@ -2,7 +2,7 @@
 title: Get leader current order page
 position_number: 1
 type: get
-description: /v1/future-u/ct/copy-trade/leader-order-page
+description: /ct/copy-trade/leader-order-page
 parameters:
     -
         name: type

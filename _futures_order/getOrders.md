@@ -2,7 +2,7 @@
 title: See Orders
 position_number: 5
 type: get
-description: /v1/future-u/trade/order/list
+description: /trade/order/list
 parameters:
   - name: clientOrderId
     type: String

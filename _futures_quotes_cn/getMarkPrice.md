@@ -2,7 +2,7 @@
 title: 获取单个交易对的标记价格
 position_number: 13
 type: get
-description: /v1/future-u/market/public/q/symbol-mark-price
+description: /market/public/q/symbol-mark-price
 parameters:
     -
         name: symbol

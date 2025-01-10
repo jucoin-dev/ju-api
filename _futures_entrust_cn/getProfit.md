@@ -2,7 +2,7 @@
 title: 查询止盈止损
 position_number: 10
 type: get
-description: /v1/future-u/trade/entrust/profit-list
+description: /trade/entrust/profit-list
 parameters:
     -
         name: symbol

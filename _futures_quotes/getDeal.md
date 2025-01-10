@@ -2,7 +2,7 @@
 title: Get Latest Transaction Information of Trading Pairs
 position_number: 9
 type: get
-description: /v1/future-u/market/public/q/deal
+description: /market/public/q/deal
 parameters:
     -
         name: symbol

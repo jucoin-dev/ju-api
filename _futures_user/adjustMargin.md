@@ -2,7 +2,7 @@
 title: Alter Margin
 position_number: 10
 type: post
-description: /v1/future-u/user/position/margin
+description: /trade/position/margin
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -

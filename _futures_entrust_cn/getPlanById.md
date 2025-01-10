@@ -2,7 +2,7 @@
 title: 根据entrustId查询计划委托
 position_number: 5
 type: get
-description: /v1/future-u/trade/entrust/plan-detail
+description: /trade/entrust/plan-detail
 parameters:
     -
         name: entrustId

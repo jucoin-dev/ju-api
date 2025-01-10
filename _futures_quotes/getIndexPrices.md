@@ -2,7 +2,7 @@
 title: Get Index Price for All Trading Pairs
 position_number: 12
 type: get
-description: /v1/future-u/market/public/q/index-price
+description: /market/public/q/index-price
 parameters:
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:

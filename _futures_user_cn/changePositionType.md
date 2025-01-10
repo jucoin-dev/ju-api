@@ -2,7 +2,7 @@
 title: 修改持仓模式
 position_number: 17
 type: post
-description: /v1/future-u/user/position/change-type
+description: /trade/position/change-type
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -

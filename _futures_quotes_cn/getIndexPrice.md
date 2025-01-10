@@ -2,7 +2,7 @@
 title: 获取单个交易对的指数价格
 position_number: 11
 type: get
-description: /v1/future-u/market/public/q/symbol-index-price
+description: /market/public/q/symbol-index-price
 parameters:
     -
         name: symbol

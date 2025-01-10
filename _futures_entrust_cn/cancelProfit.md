@@ -2,7 +2,7 @@
 title: 撤销止盈止损
 position_number: 8
 type: post
-description: /v1/future-u/trade/entrust/cancel-profit-stop
+description: /trade/entrust/cancel-profit-stop
 remark: Content-Type = application/x-www-form-urlencoded && application/json
 parameters:
     -

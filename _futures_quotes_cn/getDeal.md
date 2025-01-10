@@ -2,7 +2,7 @@
 title: 获取交易对的最新成交信息
 position_number: 9
 type: get
-description: /v1/future-u/market/public/q/deal
+description: /market/public/q/deal
 parameters:
     -
         name: symbol

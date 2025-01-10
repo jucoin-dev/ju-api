@@ -2,7 +2,7 @@
 title: 获取全交易对的行情信息
 position_number: 8
 type: get
-description: /v1/future-u/market/public/q/tickers
+description: /market/public/q/tickers
 parameters:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:

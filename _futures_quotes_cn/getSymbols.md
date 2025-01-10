@@ -2,7 +2,7 @@
 title: 获取上架和可交易的交易对配置信息
 position_number: 4
 type: get
-description: /v1/future-u/market/v3/public/symbol/list
+description: /market/v3/public/symbol/list
 parameters:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:

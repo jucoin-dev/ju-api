@@ -2,7 +2,7 @@
 title: 获取交易对深度信息
 position_number: 2
 type: get
-description: /future/market/v1/public/cg/orderbook
+description: /market/v1/public/cg/orderbook
 remark: Content-Type = application/x-www-form-urlencoded
 parameters:
   -

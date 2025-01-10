@@ -2,7 +2,7 @@
 title: 获取资金费率
 position_number: 18
 type: get
-description: /v1/future-u/market/public/q/funding-rate
+description: /market/public/q/funding-rate
 parameters:
     -
         name: symbol

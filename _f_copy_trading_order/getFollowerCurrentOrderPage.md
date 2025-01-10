@@ -2,7 +2,7 @@
 title: Get follower current order page
 position_number: 13
 type: get
-description: /v1/future-u/ct/copy-trade/follower-order-page
+description: /ct/copy-trade/follower-order-page
 parameters:
     -
         name: type

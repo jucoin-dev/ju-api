@@ -2,7 +2,7 @@
 title: See Transaction Details
 position_number: 1.1
 type: get
-description: /v1/future-u/trade/order/trade-list
+description: /trade/order/trade-list
 parameters:
     -
         name: orderId

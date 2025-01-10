@@ -2,7 +2,7 @@
 title: See Order History
 position_number: 1.1
 type: get
-description: /v1/future-u/trade/order/list-history
+description: /trade/order/list-history
 parameters:
     -
         name: symbol

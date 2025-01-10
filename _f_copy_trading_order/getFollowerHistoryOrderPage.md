@@ -2,7 +2,7 @@
 title: Get follower history order page
 position_number: 14
 type: get
-description: /v1/future-u/ct/copy-trade/follower-order-history
+description: /ct/copy-trade/follower-order-history
 parameters:
     -
         name: type

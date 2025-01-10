@@ -2,7 +2,7 @@
 title: 获取ADL信息
 position_number: 13
 type: get
-description: /v1/future-u/user/position/adl
+description: /trade/position/adl
 content_markdown: |-
 
                 #### **限流规则**

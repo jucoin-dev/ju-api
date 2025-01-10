@@ -2,7 +2,7 @@
 title: 根据profitId查询止盈止损
 position_number: 11
 type: get
-description: /v1/future-u/trade/entrust/profit-detail
+description: /trade/entrust/profit-detail
 parameters:
     -
         name: profitId

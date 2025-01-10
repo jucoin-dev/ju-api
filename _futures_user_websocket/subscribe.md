@@ -12,9 +12,9 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    WS user subscription address:wss://fstream.ju.com/ws/user
+    WS user subscription address:wss://fws.ju.com/ws/user
     
-    Step 1: The user need to call the interface: /v1/user/listen-key to get the listenKey.
+    Step 1: The user need to call the interface: /user/listen-key to get the listenKey.
     
     Step 2: When subscribing to user-related websocket events, users need to send: {"req":"sub_user", "listenKey":"listenKey obtained in the previous step"}
 

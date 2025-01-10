@@ -2,7 +2,7 @@
 title: Get Funding Rate Records
 position_number: 19
 type: get
-description: /v1/future-u/market/public/q/funding-rate-record
+description: /market/public/q/funding-rate-record
 parameters:
     -
         name: symbol

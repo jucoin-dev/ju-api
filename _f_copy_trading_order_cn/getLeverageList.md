@@ -2,7 +2,7 @@
 title: 查看杠杆倍数
 position_number: 31
 type: get
-description: /v1/future-u/ct/position/list
+description: /ct/position/list
 parameters:
     -
         name: symbol

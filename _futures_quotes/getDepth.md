@@ -2,7 +2,7 @@
 title: Get Depth Data of Trading Pairs
 position_number: 10
 type: get
-description: /v1/future-u/market/public/q/depth
+description: /market/public/q/depth
 parameters:
     -
         name: symbol

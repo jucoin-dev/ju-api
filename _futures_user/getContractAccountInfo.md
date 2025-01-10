@@ -2,7 +2,7 @@
 title: Get contract account assets
 position_number: 1
 type: get
-description: /v1/future-u/user/compat/balance/list
+description: /user/compat/balance/list
 parameters:
   -
     name: queryAccountId

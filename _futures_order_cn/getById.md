@@ -2,7 +2,7 @@
 title: 根据id查询订单
 position_number: 4
 type: get
-description: /v1/future-u/trade/order/detail
+description: /trade/order/detail
 parameters:
   - name: orderId
     type: integer

@@ -2,7 +2,7 @@
 title: Get Index Price for Single Trading Pair
 position_number: 11
 type: get
-description: /v1/future-u/market/public/q/symbol-index-price
+description: /market/public/q/symbol-index-price
 parameters:
     -
         name: symbol

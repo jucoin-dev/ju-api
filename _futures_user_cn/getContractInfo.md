@@ -2,7 +2,7 @@
 title: 获取账户相关信息
 position_number: 1
 type: get
-description: /v1/future-u/user/account/info
+description: /user/account/info
 content_markdown: |-
 
                #### **限流规则**

@@ -2,7 +2,7 @@
 title: Get Aggregated Market Information for All Trading Pairs
 position_number: 17
 type: get
-description: /v1/future-u/market/public/q/agg-tickers
+description: /market/public/q/agg-tickers
 parameters:
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:

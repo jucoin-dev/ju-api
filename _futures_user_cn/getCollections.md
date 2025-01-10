@@ -2,7 +2,7 @@
 title: 收藏交易对列表
 position_number: 16
 type: get
-description: /v1/future-u/user/user/collection/list
+description: /user/collection/list
 
 content_markdown: |-
 

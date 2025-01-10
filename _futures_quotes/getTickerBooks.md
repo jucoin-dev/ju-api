@@ -2,7 +2,7 @@
 title: Get Ask Bid Market Information for All Trading Pairs
 position_number: 19
 type: get
-description: /v1/future-u/market/public/q/ticker/books
+description: /market/public/q/ticker/books
 parameters:
 content_markdown: Note：This method does not require a signature.
 left_code_blocks:

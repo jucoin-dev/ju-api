@@ -2,7 +2,7 @@
 title: 获取所有交易对的指数价格
 position_number: 12
 type: get
-description: /v1/future-u/market/public/q/index-price
+description: /market/public/q/index-price
 parameters:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:

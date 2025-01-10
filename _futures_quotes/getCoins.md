@@ -2,7 +2,7 @@
 title: Get Trading Pair Currency
 position_number: 2
 type: get
-description: /v1/future-u/market/public/symbol/coins
+description: /market/public/symbol/coins
 
 parameters:
   - name:

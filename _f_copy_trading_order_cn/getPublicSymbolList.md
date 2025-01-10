@@ -2,7 +2,7 @@
 title: 获取跟单合约所有交易对列表
 position_number: 19
 type: get
-description: /v1/future-u/ct/public/user/v1/public/copy-trade/symbol-list
+description: /ct/public/user/v1/public/copy-trade/symbol-list
 parameters:
     
 content_markdown: >-
