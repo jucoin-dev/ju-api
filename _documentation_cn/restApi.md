@@ -9,7 +9,7 @@ content_markdown: |-
 
     **生产环境: https://api.jucoin.com**
     {: .info}
-        https://api.jucoin.io(备用1)
+        https://api.jucoin.vc(备用1)
         https://api.jucoin.live(备用2)
 
 

@@ -2,7 +2,7 @@
 title: 成交查询
 position_number: 1
 type: get
-description: /v1/spot/trade
+description: /v1/spot/public/trade/recent
 parameters:
     -
         name: symbol
