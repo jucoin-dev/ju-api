@@ -2,7 +2,7 @@
 title: Query trade
 position_number: 1
 type: get
-description: /v1/spot/public/trade/recent
+description: /v1/spot/trade
 parameters:
     -
         name: symbol
