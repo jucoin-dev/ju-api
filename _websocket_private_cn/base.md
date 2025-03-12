@@ -15,7 +15,7 @@ parameters:
 content_markdown: >-
     #### **基地址**
 
-    ##### **wss://stream.ju.com/private**
+    ##### **wss://sws.ju.com/private**
 
 
     ---
