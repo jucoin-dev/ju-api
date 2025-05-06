@@ -121,11 +121,11 @@ collections:
     type: futures
     language: en
     position_number: 1
-  futures_package:
-    title: Python Package
-    type: futures
-    language: en
-    position_number: 2
+#  futures_package:
+#    title: Python Package
+#    type: futures
+#    language: en
+#    position_number: 2
   futures_quotes:
     title: Market data
     type: futures
