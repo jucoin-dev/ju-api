@@ -171,11 +171,11 @@ collections:
     type: futures
     language: cn
     position_number: 1
-  futures_package_cn:
-    title: Python Package
-    type: futures
-    language: cn
-    position_number: 2
+#  futures_package_cn:
+#    title: Python Package
+#    type: futures
+#    language: cn
+#    position_number: 2
   futures_quotes_cn:
     title: 行情数据
     type: futures
