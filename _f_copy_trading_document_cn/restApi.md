@@ -8,11 +8,11 @@ parameters:
 content_markdown: |-
     正式:
 
-    **U本位合约:https://api.jcwork.net/v1/future-u/**
+    **U本位合约:https://api.jucoin.com/v1/future-u/**
     {: .info}
 
 
-    **币本位合约:https://api.jcwork.net/v1/future-c/**
+    **币本位合约:https://api.jucoin.com/v1/future-c/**
     {: .info}
 
 left_code_blocks:

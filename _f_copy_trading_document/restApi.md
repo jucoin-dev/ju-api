@@ -8,11 +8,11 @@ parameters:
 content_markdown: |-
     Official:
 
-    **USDT-M:https://api.jcwork.net/v1/future-u/**
+    **USDT-M:https://api.jucoin.com/v1/future-u/**
     {: .info}
 
 
-    **Coin-M:https://api.jcwork.net/v1/future-c/**
+    **Coin-M:https://api.jucoin.com/v1/future-c/**
     {: .info}
 
 left_code_blocks:
