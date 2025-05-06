@@ -1,176 +1,176 @@
-[//]: # (---)
+---
 
-[//]: # (title: Transfer between user business systems)
+title: Transfer between user business systems
 
-[//]: # (position_number: 1)
+position_number: 1
 
-[//]: # (type: post)
+type: post
 
-[//]: # (description: /v1/spot/balance/transfer)
+description: /v1/spot/balance/transfer
 
-[//]: # (parameters:)
+parameters:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: bizId)
+        name: bizId
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: Unique id for idempotent processing)
+        description: Unique id for idempotent processing
 
-[//]: # (        ranges: Maximum length is 128)
+        ranges: Maximum length is 128
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: from)
+        name: from
 
-[//]: # (        type: enum)
+        type: enum
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default: )
+        default: 
 
-[//]: # (        description: Fund transfer out account)
+        description: Fund transfer out account
 
-[//]: # (        ranges: <a href="#bizType">bizType enmu</a>)
+        ranges: <a href="#bizType">bizType enmu</a>
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: to)
+        name: to
 
-[//]: # (        type: enum)
+        type: enum
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default: )
+        default: 
 
-[//]: # (        description: Fund transfer in account)
+        description: Fund transfer in account
 
-[//]: # (        ranges: <a href="#bizType">bizType enum</a>)
+        ranges: <a href="#bizType">bizType enum</a>
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: currency)
+        name: currency
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: Currency name must be all lowercase &#40;usdt,btc&#41;)
+        description: Currency name must be all lowercase (usdt,btc)
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: symbol)
+        name: symbol
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: false)
+        mandatory: false
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: The transfer symbol must be all lowercase &#40;this field must be passed if one of the transfer-in and transfer-out parties is leverage&#41;)
+        description: The transfer symbol must be all lowercase (this field must be passed if one of the transfer-in and transfer-out parties is leverage)
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: amount)
+        name: amount
 
-[//]: # (        type: bigDecimal)
+        type: bigDecimal
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: Transfer amount)
+        description: Transfer amount
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: remark)
+        name: remark
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: false)
+        mandatory: false
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: max 256)
+        description: max 256
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: toRemark)
+        name: toRemark
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: false)
+        mandatory: false
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: max 100)
+        description: max 100
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (        )
-[//]: # (content_markdown: >-)
+        
+content_markdown: >-
 
-[//]: # ()
-[//]: # ()
-[//]: # (left_code_blocks:)
 
-[//]: # (    -)
 
-[//]: # (        code_block: |-)
+left_code_blocks:
 
-[//]: # (            public String transferPost&#40;&#41;{)
+    -
 
-[//]: # ()
-[//]: # ()
-[//]: # (            })
+        code_block: |-
 
-[//]: # (        title: Java)
+            public String transferPost(){
 
-[//]: # (        language: java)
 
-[//]: # (    -)
 
-[//]: # (        code_block:)
+            }
 
-[//]: # (        title: Python)
+        title: Java
 
-[//]: # (        language: python)
+        language: java
 
-[//]: # (right_code_blocks:)
+    -
 
-[//]: # (    -)
+        code_block:
 
-[//]: # (        code_block: |-)
+        title: Python
 
-[//]: # (                {)
+        language: python
 
-[//]: # (                  "code": 200,)
+right_code_blocks:
 
-[//]: # (                  "msg": "SUCCESS",)
+    -
 
-[//]: # (                  "msgInfo": [],)
+        code_block: |-
 
-[//]: # (                  "data": 123456 //The returned unique id of the transfer, it is recommended to store it for reconciliation)
+                {
 
-[//]: # (                })
+                  "code": 200,
 
-[//]: # (        title: Response)
+                  "msg": "SUCCESS",
 
-[//]: # (        language: json)
+                  "msgInfo": [],
 
-[//]: # (---)
+                  "data": 123456 //The returned unique id of the transfer, it is recommended to store it for reconciliation
+
+                }
+
+        title: Response
+
+        language: json
+
+---

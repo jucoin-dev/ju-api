@@ -1,176 +1,176 @@
-[//]: # (---)
+---
 
-[//]: # (title: 用户业务系统间划转)
+title: 用户业务系统间划转
 
-[//]: # (position_number: 1)
+position_number: 1
 
-[//]: # (type: post)
+type: post
 
-[//]: # (description: /v1/spot/balance/transfer)
+description: /v1/spot/balance/transfer
 
-[//]: # (parameters:)
+parameters:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: bizId)
+        name: bizId
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: 唯一id 用作重复请求幂等)
+        description: 唯一id 用作重复请求幂等
 
-[//]: # (        ranges: 最大长度为128)
+        ranges: 最大长度为128
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: from)
+        name: from
 
-[//]: # (        type: enum)
+        type: enum
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: 划出业务账户)
+        description: 划出业务账户
 
-[//]: # (        ranges: <a href="#bizTypeCn">bizType 枚举</a>)
+        ranges: <a href="#bizTypeCn">bizType 枚举</a>
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: to)
+        name: to
 
-[//]: # (        type: enum)
+        type: enum
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: 划入业务账户)
+        description: 划入业务账户
 
-[//]: # (        ranges: <a href="#bizTypeCn">bizType 枚举</a>)
+        ranges: <a href="#bizTypeCn">bizType 枚举</a>
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: currency)
+        name: currency
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: 币种名称必须全部小写（usdt，btc）)
+        description: 币种名称必须全部小写（usdt，btc）
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: symbol)
+        name: symbol
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: false)
+        mandatory: false
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: 划转交易对必须全部小写（划入划出有一方是杠杆此字段必传）)
+        description: 划转交易对必须全部小写（划入划出有一方是杠杆此字段必传）
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: amount)
+        name: amount
 
-[//]: # (        type: bigDecimal)
+        type: bigDecimal
 
-[//]: # (        mandatory: true)
+        mandatory: true
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: 划转的数量)
+        description: 划转的数量
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: remark)
+        name: remark
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: false)
+        mandatory: false
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: max 256)
+        description: max 256
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (    -)
+    -
 
-[//]: # (        name: toRemark)
+        name: toRemark
 
-[//]: # (        type: string)
+        type: string
 
-[//]: # (        mandatory: false)
+        mandatory: false
 
-[//]: # (        default:)
+        default:
 
-[//]: # (        description: max 100)
+        description: max 100
 
-[//]: # (        ranges:)
+        ranges:
 
-[//]: # (      )
-[//]: # (content_markdown: >-)
+      
+content_markdown: >-
 
-[//]: # ()
-[//]: # ()
-[//]: # (left_code_blocks:)
 
-[//]: # (    -)
 
-[//]: # (        code_block: |-)
+left_code_blocks:
 
-[//]: # (            public String transferPost&#40;&#41;{)
+    -
 
-[//]: # ()
-[//]: # ()
-[//]: # (            })
+        code_block: |-
 
-[//]: # (        title: Java)
+            public String transferPost(){
 
-[//]: # (        language: java)
 
-[//]: # (    -)
 
-[//]: # (        code_block:)
+            }
 
-[//]: # (        title: Python)
+        title: Java
 
-[//]: # (        language: python)
+        language: java
 
-[//]: # (right_code_blocks:)
+    -
 
-[//]: # (    -)
+        code_block:
 
-[//]: # (        code_block: |-)
+        title: Python
 
-[//]: # (                {)
+        language: python
 
-[//]: # (                  "code": 200,)
+right_code_blocks:
 
-[//]: # (                  "msg": "string",)
+    -
 
-[//]: # (                  "msgInfo": [],)
+        code_block: |-
 
-[//]: # (                  "data": 123456  //返回的划转唯一id 建议存储用来对账)
+                {
 
-[//]: # (                })
+                  "code": 200,
 
-[//]: # (        title: Response)
+                  "msg": "string",
 
-[//]: # (        language: json)
+                  "msgInfo": [],
 
-[//]: # (---)
+                  "data": 123456  //返回的划转唯一id 建议存储用来对账
+
+                }
+
+        title: Response
+
+        language: json
+
+---
