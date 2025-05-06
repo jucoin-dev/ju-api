@@ -14,7 +14,7 @@ parameters:
 content_markdown: >-
     #### **Base Address**
 
-    ##### **wss://fstream.ju.com/ws/user**
+    ##### **wss://fws.jucoin.com/ws/user**
 
 
     ---

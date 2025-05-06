@@ -12,8 +12,8 @@ content_markdown: |-
     {: .info}
 
 
-    **币本位合约:https://api.jucoin.com/v1/future-c/**
-    {: .info}
+#    **币本位合约:https://api.jucoin.com/v1/future-c/**
+#    {: .info}
 
 left_code_blocks:
     -

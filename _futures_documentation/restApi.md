@@ -12,8 +12,8 @@ content_markdown: |-
     {: .info}
 
 
-    **Coin-M:https://api.jucoin.com/v1/future-c/**
-    {: .info}
+#    **Coin-M:https://api.jucoin.com/v1/future-c/**
+#    {: .info}
 
 left_code_blocks:
     -
